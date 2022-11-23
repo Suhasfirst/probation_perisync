@@ -1,0 +1,21 @@
+a
+{
+    /* this color property will keep the link color as it is even after visiting the link */
+    color: blue;
+    text-decoration: none;
+}
+
+/* pseudo selectors */
+
+/* focus will highlight the links when using tab instead of mouse */
+a:hover, a:focus 
+{
+    color: red;
+    opacity: 0.7;
+}
+
+a:visited
+{
+    color: blueviolet;
+    text-decoration: underline;
+}

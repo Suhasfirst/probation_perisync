@@ -1,0 +1,46 @@
+*
+{
+    border: 1px solid black;
+}
+
+body
+{
+    font-size: 15px;
+    border: solid black 1px;
+}
+
+p
+{
+    color: brown;
+}
+
+p
+{
+    color: cadetblue;
+}
+
+.gray
+{
+    color: blue;
+}
+
+.gray span
+{
+    background-color: gold;
+}
+
+#second
+{
+    font-style: italic;
+}
+
+h1
+{
+    color: blueviolet;
+}
+
+.highlight
+{
+    text-transform: uppercase;
+    background-color: gold;
+}

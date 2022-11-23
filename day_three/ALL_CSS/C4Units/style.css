@@ -1,0 +1,28 @@
+h1
+{
+    border: 1px dashed red;
+    width: 70%;
+    /* pixel is fixed measurement. Ex: 20px looks same on mobile & laptop screen */
+    /*! RECOMMENDED==> rem means root element. It's relative to html element which has default unit of 16px. Fonts with rem units will change the size based on screen size.  */
+    /* font-size: 40px; */
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+p
+{
+    font-size: 1rem;
+    /* font-size: 20px; */
+}
+
+main
+{
+    background-color: burlywood;
+}
+
+body
+{
+    background-color: cornflowerblue;
+    width: 100vw;
+    height: 100vh;
+}
