@@ -1,0 +1,33 @@
+.column
+{
+    column-count: 4;
+    column-width: 250px;
+    column-rule: 1px solid black;
+    column-gap: 2rem;
+}
+
+.column p
+{
+    margin-top: 0px;
+}
+
+.column h2
+{
+    background-color: lightgray;
+    
+}
+
+.column .quote
+{
+    font-size: 3rem;
+    text-align: center;
+    column-span: all;
+    margin-top: 2rem;
+
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+

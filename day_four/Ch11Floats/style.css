@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.left
+{
+    height: 20vh;
+    width: 20vw;
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+p
+{
+    /* margin not working for paragraph. So, try applying the margin to div block above */
+    margin-left: 10px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.right
+{
+    height: 20vh;
+    width: 20vw;
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem;
+    float: right;
+    margin-left: 1rem;
+}
+
+section
+{
+    background-color: bisque;
+    border: 1px solid black;
+    overflow: auto;
+    /* another way to prevent the shrinking of section beyond float block */
+    /* overflow: flow-root; */
+}

@@ -1,0 +1,65 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 5rem;
+    text-align: center;
+}
+
+nav
+{
+    border: 2px solid blue;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    font-size: 3rem;
+    line-height: 7rem;
+    /* overflow: hidden; */
+}
+
+h2
+{
+    padding: 1rem;
+    background-color: yellow;
+    border-radius: 2rem 2rem 0 0;
+}
+
+ul
+{
+    list-style-position: inside;
+    list-style-type: none;
+
+}
+
+li
+{
+    border: 1px solid black;
+}
+
+li a, li:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    /* to convert inline element to block level element */
+    display: block;
+}
+
+li a:hover, li a:focus
+{
+    color: white;
+    background-color: black;
+}
+
+li:last-child
+{
+    border-radius: 0 0 2rem 2rem;
+    overflow: hidden;
+}
+

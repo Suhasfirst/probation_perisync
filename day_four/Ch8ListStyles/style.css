@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body
+{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 5%;
+}
+
+ol
+{
+    list-style-type: decimal-leading-zero;
+    /* list-style-type: none;
+    padding: 0; */
+}
+
+ul
+{
+    border: 1px solid red;
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: blue;
+    line-height: 2rem;
+    /* list-style-image: url("./images/check-mark-1292787_1280.webp"); */
+    list-style: square url('./images/check_black.jpg');
+
+}
+
+ul li:nth-child(odd)
+{
+    color: red;
+}
+
+ul li:nth-child(2)
+{
+    font-style: italic;
+}
+
+ol ::marker
+{
+    color: blue;
+    font-style: italic;
+    font-size: 1.2rem;
+    /* content: "%5 disc"; */
+}
