@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    /* background-color: lightblue; */
+    /* width: 100vw; */
+    min-height: 100vh;
+}
+
+.hero
+{
+    border-bottom: 1px solid black;
+    background-image: url(./images/map-2176x1451.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: hsla(0, 0%, 0%, 0.516);
+
+}
+
+.profile-pic-figure
+{
+    width: 40%;
+}
+
+.profile-pic-figure img
+{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 50%;
+}
+
+img
+{
+    display: block;
+}
+
+h1
+{
+    color: aliceblue;
+    background-color: hsla(0, 0%, 0%, 0.416);
+    box-shadow: 1px black;
+    padding: 20px;
+}
+
+#test
+{
+    background-color: hsla(0, 0%, 0%, 0.516);
+    z-index: 1;
+}
+
+#grad
+{
+    background-image: url(./images/bubbles.png) ,linear-gradient(to right, white, steelblue);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center;
+    background-size: 20%, auto;
+}
+
+#clip
+{
+    font-size: 190px;
+    background-image: url(./images/scenic-2200x1331.png);
+    background-position: center;
+    background-size: 100%;
+
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.1);
+}
