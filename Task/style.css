@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body
+{
+    /* background-color: cadetblue; */
+}
+
+#bodydiv
+{
+    display: flex;
+    width: 100%;
+    
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+/* ! EMPTY DIV */
+
+#emptydiv1
+{
+    flex: 7.5;
+}
+
+#emptydiv2
+{
+    flex: 5;
+}
+
+
+/* ! DASHBOARD */
+
+#dashboard
+{
+    flex: 18;
+}
+
+#logodiv
+{
+    height: 14%;
+    position: relative;
+}
+
+#logodiv #logo
+{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+
+#menu
+{
+    height: 56.4% ;
+    background-color: blue;
+    border-top-right-radius: 50px;
+}
+
+#upgrade
+{
+    height: 13.5%;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+#upgrade #box
+{
+    width: 74.4%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: green;
+}
+
+#personal
+{
+    height: 16%;
+    background-color: blue;
+}
+
+/* ! MAIN PAGE */
+
+#mainpage
+{
+    flex: 44;
+    min-width: 360px;
+    /* margin-left: 100px; */
+    /* padding-left: 100px; */
+}
+
+#searchbardiv
+{
+    height: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchbardiv #search
+{
+    min-width: 100%;
+    height: 40%;
+}
+
+#home
+{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#heading
+{
+    flex: 0.3;
+    width: 100%;
+    
+}
+
+#heading #headinghome
+{
+    width: 100%;
+    height: 45%;
+    margin-top: 15px;
+    
+}
+
+#heading #headinghome h1
+{
+    font-size: 2.5em;
+}
+
+#projecticon
+{
+    flex: 0.7;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#icon
+{
+    flex: 35.8;
+}
+
+#description
+{
+    flex: 64.1;
+    display: flex;
+    flex-direction: column;
+}
+
+#project
+{
+    flex: 1;
+}
+
+
+
+#projecttext
+{
+    flex: 1.7;
+}
+
+#checkbox1
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#checkbox2
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#empty4
+{
+    flex: 2.4;
+}
+
+#recent
+{
+    height: 36%;
+    display: flex;
+    flex-direction: column;
+}
+
+#recenttitle
+{
+    /* height: 20%; */
+    flex: 1;
+}
+
+#venus
+{
+flex: 1;
+}
+
+#billie
+{
+    flex: 1;
+}
+
+#city
+{
+    flex: 1;
+}
+
+#emptydiv3
+{
+    flex: 1;
+}
+
+
+
+
+/* ! SIDEBAR */
+
+#sidebar
+{
+    flex: 25;
+    min-width: 280px;
+}
+
+#bellicon
+{
+    height: 14%;
+}
+
+#media
+{
+    height: 50%;
+}
+
+#mediaicon
+{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#mediaicon #image
+{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+#mediatitle
+{
+    height: 20%;
+}
+
+#updown
+{
+    height: 20%;
+}
+
+#threelinks
+{
+    height: 20%;
+}
+
+#comments
+{
+    height: 36%;
+}
+
+#threeicons
+{
+    height: 25%;
+}
+
+#comment
+{
+    height: 25%;
+}
+
+#newcomment
+{
+    height: 25%;
+}
+
+
+
+/* ! MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+    
+    #dashboard
+    {
+        display: none;
+    }
+
+    #emptydiv1, #emptydiv2
+    {
+        display: none;
+    }
+
+    #bodydiv
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 641px)
+{
+    #sidebar
+    {
+        flex: 1;
+    }
+}
