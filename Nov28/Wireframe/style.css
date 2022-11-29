@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+
+}
+
+body
+{
+    /* background-color: lightgray; */
+    background-color: red;
+}
+
+#maindiv
+{
+    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logindiv
+{
+    /* border: 1px solid black; */
+    height: 600px;
+    width: 500px;
+    display: flex;
+}
+
+#innerdiv
+{
+    /* border: 1px solid black; */
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+#headerdiv
+{
+    flex: 1;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#emaildiv, #passdiv, #btndiv
+{
+    flex: 1;
+}
+
+.same
+{
+    /* flex: 0.2; */
+    /* border: 1px solid black; */
+    margin: 2px;
+    
+}
+#notammbrdiv{
+    /* flex: 0.7; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#emailtextdiv, #passtextdiv, #forgotpassdiv, #notammbrdiv
+{
+    /* flex: 0.1; */
+}
+
+#emaildiv{
+    /* width: 80%; */
+    display: flex;
+   
+}

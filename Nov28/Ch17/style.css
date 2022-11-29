@@ -1,0 +1,95 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+
+    background-color: gray;
+    background-image: radial-gradient(white, gray);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+header, nav, main, footer
+{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer
+{
+    position: sticky;
+    background-color: black;
+    color: aliceblue;
+}
+
+header
+{
+    top: 0;
+}
+
+nav
+{
+    background-color: #fff;
+    color: black;
+
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+footer
+{
+    bottom: 0;
+}
+
+/*! FOR SMALL SCREEN */
+@media screen and (min-width: 576px) {
+    body
+    {
+        background-color: green;
+        background-image: radial-gradient(white, green);
+
+    }
+
+    nav
+    {
+        display: none;
+    }
+}
+
+
+/*! FOR MEDIUM SCREEN */
+
+@media screen and (min-width: 768px) {
+    body
+    {
+        background-color: gold;
+        background-image: radial-gradient(white, gold);
+
+    }
+}
+
+/*! FOR LARGE SCREEN */
+
+@media screen and (min-width: 992px) {
+    body
+    {
+        background-color: red;
+        background-image: radial-gradient(white, red);
+
+    }
+}
