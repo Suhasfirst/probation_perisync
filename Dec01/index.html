@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Task 2.0</title>
+</head>
+
+<body>
+
+    <div id="viewport" class="darkbackgrd whitetext">
+
+        <!-- ! MENU BAR -->
+        <div id="menubar" class=" alex">
+
+            <div id="menutitle">
+                <div id="adze">
+                    <p>Adze.<span>DESIGN</span></p>
+                </div>
+            </div>
+
+            <div id="newsfeed" >
+
+                <div id="newsfeedinner">
+
+                    <div id="newstitle" class="opaquept5">
+                        News Feed
+                    </div>
+
+                    <div id="news1" class="news ac">
+
+                        <div id="news1icon" class="nicon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACd0lEQVRIidWVS0hUYRTHf+fO+AhfqInmjCE1YWCtlGiZWzFLJzQy2lhEj0WLHlQbIXrgugdhUNDGzAQzq121M8JNkFGOLXScRhLTrGBe97QYtcmZ71ZL/7vvnvOd3/98rwtrXeIUvF1Xl7V+IbwHaAbqgQ1AAjQM1ohgD8UDoSdtkPhvwKPN3hZEuwGfs0MZE+V0y0Tw2T8BusDa7qu8AnLOqfAqqaJd/kDokoCmBlyrM09u8XYLnDUU+gnEgazVRgVpGCspsPvmFl8ZO+j3edoEHhhtih4QtfJAe8wp0tg6EXyeBuirrc12RebfA5sMk0OzRRXVxTMzbleuTgGlmZJE+VBcNb2t4SVxAGs54IrMtzsUB+FW2Y9wIdnZ2aB3zF1SMxesbFweWymxZmNxiLjjsR6Ncdkl0QsJm5sk98Kk3ZkAO4zmhV4r4l5E2I/Yh8o2hkLAoLm+7PwDoMm9qDClq6090TxpAIpAKuaCnnpRMS4TyQuZ1oGDIUn4x6eHc6KukkROtMAfmB5Rl+20RCuHx1oaKTBjztdOgKbJya9t7758T36STof8z2kdqPLGwVDHwFbPyrEcrKmqRPGb7Vuv0wBiMWQGsI64HF4exOP2MdJvcyphOA3wLZbVC0yZ5ih6/MUu3E99vhyEIw5mPhZ7go9/s1LU7/MeFPS+ESKyD1vzRbhn9IHu9QdCmQFLkOuCnjAUWCD5QOZnCgp6rTUQOp/6Le2YlnqDpxS5YQAUmYqj0v02ELqYDjVowOftUPQqUGXKWdInETnTOh4cyBR0/GXera7OLXDF2kVoIvmUlAOKEsZiBGRotrD84dHR0dhfTKxh/QLAVswNvoCMOQAAAABJRU5ErkJggg==">
+
+
+                        </div>
+
+                        <div id="news1title">
+                            <P> Browse</P>
+                        </div>
+                        
+                    </div>
+
+                    <div id="news1" class="news opaquept5 ac ">
+
+                        <div id="news1icon" class="nicon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAD6UlEQVRoge2ZS2xUZRTHz9dpkzY824SAPGQBZlLA2AcaQaML07DhZYRoN4QFwUAw7MqSmmriVoMPCJKgTdzwaOKCpyZujGIIBEMxLIDSamKkLVCg1bT9ubjncz7Tdu43d+58w2L+yeRkvnvO//zP/R5z7xmRCiqooIIKygDj6whkRWSriLSJyBIRWSYi1SIyJCLXReQHETlhjPnNk69RRLaJyGsislpEGkRkXET6RWRARC6ISI8x5qavxriEa4Hv8MMkcBZoysPXrD6TnpwXgdZiCqgBDjkJB4GjwGYgC8wCaoFlwCbgc2BIfceB94GMw5cBPtBrlu8zYKNy1CpnFtgCfKk+9gZ9AlQXWkQ98L2SPAa6gLkecXOATmBMY7/SAjJAt46NAQeBOR58c7X4J87szPctosYp4i7Q7BX4f44moE85up0i7gAvJOBrBfqdYuJnRpeTLWJxoUkdnuXKYdEHPFsE32KnmI/jnNfqenycZCam4WvVpTQGtKTA16LLbCIvH7nTqavYpA5nB9CRIt+HqvHCTA5ZdRj02dgFJM7gnF4p8M0jdzo+Z8erHJ831Z42xjxMK7ExZsIYM5Ei3wMR6dGvW+24W8gbar9NK2kJYTW22QG3kOVqrweTkxy9aqeegsCIrrvZYTUVDmC2ah2xY+6M2A05HlZWIkyq/U+/W8iw2oZgcpLDahyyA24h99Q+E0xOcliNg3bALeSa2heDyUmOl9RetQNuIT+rXRdMTnK8rPbSlCtAo54Ew0BtWF3+AOqAB6o1O5PTZXXYHlifN4B3VOPU2XCc3lOny4D3+3woAAa4ohr35HOsA/5Qx7cCavQCsE21DcQuf2CfOvcD8wJpjIU+9Q6otr0+AdXALxpwLIBGLwDHVdNP3q8FwPPkGgjvllijj549qmUUWFVo8C4N/htoi48oDYANqgFgZ1IS24h4BKxPWaNP/leJ+gcQ13CIIcoA3zjFBJsZ4HXgoeY+4b0v8hDWAD3OGm1PSWu+nO2aC+AkUJMWcYaohWlxmELbl/55PiLXpv069TxEv6qdRD0lgDNAfYr89cA55Z4gaquW7umCqGF9XxPeAop+WgZeAW4r5zCwMQ2tPolXAr9q4nFdDgWvY6If3wPAP8p1g+h/k3AgagAccfbNj8CKAuJXagy6J74AZpVSc5ygDcDvKuiJ3uGqPP4G2E2ua/MnsDmk5hkBLABOObNzDlg6jd9S4LzjdxJYUA7NeQFsB/5SkfeBt51rW4B7zobeXU6tsQAWAaedu34I+NT5fgpYWG6d3gB2ED3WWIwC+8utKxGANUCvftaUW09RIHqze2reNCsIhX8Bsnoz03RAHqIAAAAASUVORK5CYII=">
+
+
+                        </div>
+
+                        <div id="news1title">
+                            <p>Watchlist</p>
+                        </div>
+                        
+                    </div>
+
+                    <div id="news1" class="news opaquept5 ac ">
+
+                        <div id="news1icon" class="nicon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABHklEQVRoge2ZTRLCIAyFg+Mp1AN11YN47HY4x3PhoPQHGxwYQppvpYUGXh5Jp0rEBMAAYMaXCcDAvb91/HihCVumXuLHCwEAUt9bx7+U2khrPkIAjAD8jr0/M5Oan8sf8T2AMcxz0Q2eiG5Hyp1zLizASFQ2mfG9c+6xuMLNDHd+Lrnx1+P6aoTBTLTJxFxwL2XiM6wcsOz1NR6I7PjJ/ZY+87WxGpHOdX2hp+MVo9eR8GSVzvrkqHHEhEhjUyMpWnUzbs2ez5HAXoaCWzXGuKhxxIRIQ42Q7GI/eo8uPcblvI5Y+62MCZGGGiHWfqVh7VcaJkQaaoRY+5UG2xHpP6WqccSESCOuEU9E987+6PHhQ+zIMx7oAE/vPRsieQEp3xMjpC6JfwAAAABJRU5ErkJggg==">
+
+
+                        </div>
+
+                        <div id="news1title">
+                            <p>Coming Soon</p>
+                        </div>
+                        
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div id="following" class="jc">
+
+                <div id="innerfollowing" class="fdcol ">
+
+                    <div id="followingtitle">
+                        <p>Following</p>
+                    </div>
+
+                    <div id="u1" class="fdrow  ac">
+
+                        <div id="u1icon" class="nicon ac">
+                            <img class="round" src="./profile-800x800.png" alt="">
+
+                        </div>
+
+                        <div id="u1name" class="ac">
+                            <p>Nick.B</p>
+                        </div>
+
+                    </div>
+
+                    <div id="u1" class="fdrow  ac">
+
+                        <div id="u1icon" class="nicon ac">
+                            <img class="round" src="./profile-800x800.png" alt="">
+                        </div>
+
+                        <div id="u1name" class="ac">
+                            <p>Vika.J</p>
+                        </div>
+
+                    </div>
+
+                    <div id="u1" class="fdrow  ac">
+
+                        <div id="u1icon" class="nicon ac">
+                            <img class="round" src="./profile-800x800.png" alt="">
+                        </div>
+
+                        <div id="u1name" class="ac">
+                            <p>Ikako.t</p>
+                        </div>
+
+                    </div>
+
+                    <div id="u1" class="fdrow  ac">
+
+                        <div id="u1icon" class="nicon ac">
+                            <img class="round" src="./profile-800x800.png" alt="">
+                        </div>
+
+                        <div id="u1name" class="ac">
+                            <p>Alesanda.B</p>
+                        </div>
+
+                    </div>
+
+                    <div id="u1" class="fdrow  ac">
+
+                        <div id="u1icon" class="nicon ac">
+                            <img class="round" src="./profile-800x800.png" alt="">
+                        </div>
+
+                        <div id="u1name" class="ac">
+                            <p>Anna.S</p>
+                        </div>
+
+                    </div>
+
+                    <div id="u1" class="fdrow ac">
+
+                        <div id="u1icon" class="nicon ac">
+                            <img class="round" src="./profile-800x800.png" alt="">
+                        </div>
+
+                        <div id="u1name" class="ac">
+                            <p>Dadd.H</p>
+                        </div>
+
+                    </div>
+
+
+                    <div id="u1" class="fdrow ac mt25pe">
+
+                        <div id="u1iconred" class="nicon jc ac">
+                            <div id="loadicon">
+
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAA50lEQVRoge3TwQqDMBCE4cVDsW/rsa9VCpU+3fTSpYMkWDUmGzr/OWb3I2imlFJKKaWqBWBovcNaqR2HxYGLmd0B3KpttTEAk5k9AVxzBy4AHvgWDgNgov1eSUwCEgqzQDhkzB0OidmEoI9CYXYh6OMQmEMIuqQppgiCLmuCKYqgS6tiTkHQ5VUwpyJoyKmYKggadgqmKoKGFsU0QdDwIpimCFriECYEgpbZhQmFoKU2YUIivF8xoRHeGqYLhJfDdIXwAIwAZuSbwyO8zMv08RLLEpj+EB5h+kV4n3+mb4RSSiml1J/3BmG7wEegqCPHAAAAAElFTkSuQmCC">
+
+                            </div>
+
+
+                        </div>
+
+                        <div id="u1name" class="ac">
+                            <p>Load more</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="hzline" class="ac jc">
+                <div id="theline"></div>
+            </div>
+
+            <div id="logout" class="jc">
+
+
+                <div id="actuallogout" class="fdrow ">
+
+                    <div id="u1icon" class="nicon ac">
+
+                        <div id="logouticon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAB10lEQVR4nO2aO07DQBRF3xBKJCoQtCnYBBISYieUrISCLIBl0FHQRUgkEQ0gIRp6PhUdQuLQTCJjcOJxZvzs+J0mkedz79zYz5E9IoZhGIZhGIZRCmBI/QxTrceFDgBIYWQRzrlgr0nI/TJfwEkdeik1gsgsfpD5fgb0UuqlmLsSWUPAMfDpD10Cmyn1GkHeELAPvPjDT8BeSj11/jME9IEH3/QOHKbUU6XIELABXMQujq0JwLf1gNNMcTwH1lPpqVDGUMzi2MoAfL8D4M13H6XWq40QQ744LrWAVgdQpX/Z8f7SGgPbVeeOaihW/7LjgRvfdF9rCHUHMGfeLeDOT/8I7MbWKBJuRAB+7vpDiBUAcE18JqHrWQsdEJFvRe3qNPwS2EmhkxdtRAAqi/fCtQZQNB6Y+KalboOaNWBZPkRkLCJHzrnX2lSbcgbEos1nQBQsAG0D2lgA2ga0sQC0DWhjAWgb0KbyM3ug75x7rjCuOQ84pdoZMPafI+Agppk5JNsgEQyBr8BS/5dXgYBXYCsZwBRKvAJb6QBEFu8PWPkARObvD+hEACLFxbEzAYjMimN289SgUwFMyRXH7gUg8qc4di8AkVlxvAWutL0YhmEYhmEYxm9+AGceLtb1kETjAAAAAElFTkSuQmCC">
+                        </div>
+
+                    </div>
+
+                    <div id="u1name" class=" opaquept5 ">
+                        <p> Log Out</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ! MAIN PAGE -->
+        <div id="mainpage">
+
+            <div id="togglemenu" class="ac jc">
+                <div id="menu">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAANUlEQVRIie3TsQ0AIAwDwYj9t8pgoWIApJCGuwVeLhwBdKuqrPfy9Nb0vuEeX3MnaONOwK0NKrA4cwLOQUAAAAAASUVORK5CYII=">
+
+                </div>
+            </div>
+
+            <div id="searchbox">
+
+                <div id="center">
+
+                    <div id="left">
+
+                        <div id="lricons" class="darkbackgrd fdrow ac jc">
+
+                            <div id="leftarrow">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAuUlEQVRoge3aMQrCQBRF0RnBEGsbezfpQsTCbVgEt2Ghu/FaOOIQLGQS/E94p5wm7/LbpGT2EZCBLnrHJCViD5yBVfSeJiXiwNvwd5epLlE7AovobV9zhApHqHCECkeocIQKR6hwhApHqHCECtWIlo8vU0rb0dst53yfYc9vAR1wGl1lF72riWNUOUaVY1Q5RpVjVDlGlWNUOUaVY1QBPc+fBF4uQB+9q0l1mSuwid4zSbnMOnqHzeUBG0jt+QINrWQAAAAASUVORK5CYII=">
+
+                            </div>
+
+                            <div id="rightarrow" class="opaquept5">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAr0lEQVRoge3RsQ3CQBBE0V1kIeeIzEXSCxIJZRBYtEEBtPJJDgGXYUA3h+aFG+3XRNifANZAtv7jIyXiBByBVet/FikRMw+HLpcBEtjzqs9lHKPKMaoco8oxqhyjyjGqHKPKMaoco+qbMU3rM5OIuFbnKSKGBu8sB+yqNc7A2PqvtzhChSNUOEKFI1Q4QoUjVDhChSNUOEIFMAKXp4i5u4g7YFti+luiBmy6j7AfugH5rO35rxKZdQAAAABJRU5ErkJggg==">
+
+                            </div>
+
+
+                        </div>
+
+                        <div id="searchbar" class="opaquept5" >
+                            <input type="text" placeholder="Search everything" class="darkbackgrd whitetext">
+                        </div>
+
+                    </div>
+
+                    <div id="right" class="fdrow darkbackgrd ac">
+
+                        <div id="ricon1" class="ricons">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEKUlEQVRoge2Z3W8VRRiHf0NbsFDbQrjRqNCDYEWrhhgNhKBe6B/gBxHxXiIaEkzwI8bojXcmarwxJsYLDTHGb0UDBg0fVisWsaJWU1QERA2JJT1IMT2PF/MuZ+F87O45u3t60V9yMjmz877vMzs7s+/OSDOaUSZyaTkCLpG0UtL1ki6X1CepR1KXNZmQNC7pkKQxSV9JGnTOHU2LoWEBS4CngG+prX/sV0vfAE8ChVZ0YDWwDZgKAQ0DzwLrgBVAbxW7Xru2DngO2B+ynwI+AFbm0YEC8H4o+BiwBVjUhM/FwCPAoZDfd4DFabIHwRywCShaoB+Bu4BZKcaYBdwNjFqMCWBjWv4FzANeN+engIeB9tQCVMbrAB4D/rWYW4F5zTqdDwyGRmF5SrxxYg8AP1nsvdXmXFxHXcA+c7QT6E6ZNQ5DD/CZMQwlHhmgzVYQgI+BCzJijcPSCewwlvcSzUvgUTPcD1yYIWdcnm7ggDFtiWt0DXAGOAksyZgxtoCltpJNAlfFMdhuPd+QA18iAQ8Y20dRDddYwxGgLSe+2ALagYPGuLpewzes0T0RDneTnXZHxL7X2m2t1aAbPzeOA7Nb2JFdEbHnAH8Bp4Guag3uNEcv1XM0HQS8bKy3B3XhNXmVlTvyxWpI260MmM/pyICVB3LDaVwB40DFFeAHG66OfJmSC5htrN8HdeER6ZFUdM79V8UwrcldsSLF8F1h45w7I+mUMVd0pHTe/yxE5jb4lyC0MEGMq6hH67iVl+aL1ZCCHPD3oCLcka+tvCE3nMZ1nZUjQUW4I19aeVNuOI3rNiv3VlzBf5tPACdobYoSlWvNAf7Gf9OfTVHOjohzrijpXUkLJN2R4O6krahVaq2khZLecs5NVPfgN89K+I2G6ZjGd1B+ca+Kavy2NXwwJ77Ywu+tAXwYp3HB5koRWJYDXywB/cZ0GrgyrtFG6/kI0BNtka3we8bfGdNDSQwd8IoZ7gQ6M+SMYplrDNhjnyyNwqcBn5iDPcCCjFjrMfQCu4xhEJjbqKNOyrvvo8CKlFnrxb4W+Dl4t9DsTqcteS+Yw0ky3iayeI/bpAZ4teGRqBFgrTk+kprTc/23AetDo3ASuC+LQBdbgM9T9lvAHyP8Zv5LwJvAZUn8JDnnWGPlcA2gDZKukHRQ/pv6F0nj4S9OWzAKkvol3SifoAbf3VPyKdLTzrmhBFzJRHl3/tbz6tvx54G1VATG61wfBp6gyaO2WMfTwEWSDks6JqnPOVey+mWSXpR0s6Q/JW2StEj+LvdJ6pU0X1KbpKKkE5J+lT+eHpL0hXPuj2Y6kEjA83b37rf/C4FnbBUDn8j15wbUiICrDbgIbMa/XScp6zWqbV1ON1FOD8IqAZ8Ct7SaL1CcVeuYpCPyz/eYpD2StjnnRrMEm9GMpon+By2mTjGoBeyfAAAAAElFTkSuQmCC">
+
+
+                        </div>
+
+                        <div id="ricon2" class="ricons">
+                            <!-- <img src="./media/4.png" alt=""> -->
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAACrElEQVRoge2YvWsUQRyG30lMcoIGBRX8wCBoYa3Y2WghmARstLELKWKCmhRJa9LZif+CtaJVsNBSQYiJHwSsYvyOCpIYi1PJPRZ3mt9t7mNub/Y24L5wMNzsvM87s7M7syNlyvR/y4UyApykk5LOSzohqUfSbkltkpYkLUqakXRf0gPn3M9Q7KYEdAITwGv89QWYArrTDn8aeNVA8KiWgP60wo8BhQojexPoBY4AOWAncAjoK9UtRtoUSnejrZXhr0dCfAOGgA6Pth3AQIWO3KL4HCUe/lIE/BDYE8OnG7gb8ZpMIrOFHgfyBngb6GrCzwE3ItPpXMjMFtYGvDCwJ0BnIN87xnehmUGpBbpgIMtAT0DvbcAH4z8eyttCXhrAtQT8B4z/ZzxeCI2YHzXmK8COYObrjHbgveGc9Wnn++7tNeVp59xy4xFryzm3Jume+euMTzvfDpwy5WnfUDFkvY/5NPDtwAFTfuYdp3EtmPLhYK7AVzM3dwUz3sjZbjh5nzZeSzewpvW71e6cK8QN6cHib9k5Vzef7xT6d12S4eOodTvAhJR1IG1lHUhbdTsA5FoRJC7b5w4MmvJC1avCyTIGq17lI6ALeGdWx8vNZfNiXjG8j8DWZsxGjNmnpsz8mbnItno4rlEn5ScHVwNnrcUeNdy3xPnEBIZbPfqGnaP8E3MojslzYzCaQM56/DHDn4tj8MMYHEwgYz1+j+F/r3bdlhoe8yqeMkvSG9Z3uWlovlpFrXVgUtJm2DoXJE3Fagn0A3PAb1qvX8As0Bd2PKp3dtXA91ao32/qV0JxQ27m7Dy9WKHe/ld1TqcmylftPDAO7Cv9Jig/FI63uiYpiiv3rMfcniHksWFIlUb7aZ3wG56PTaXSnRgBHpce7FXgEcWtyeYc+UyZMqWnP8IyTDHUf6PUAAAAAElFTkSuQmCC">
+
+
+                        </div>
+
+                        <div id="ricon3" class="ricons">
+                            <img src="./media/5.png" alt="">
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="banner">
+
+                <div id="actualbanner">
+
+                    <div id="bannerleft" class="fdcol  whitetext">
+                        
+                        <div id="bannertext" class="flex1 alex">
+                            <p> <span style="font-weight: 100;">The</span> <span style="font-weight: 900;"> SOUL CONDUCTOR</span></p>
+                        </div>
+
+                        <div id="imdb" class="flex0p3">
+                            <img src="./media/IMDB.png" >
+                        </div>
+
+                        <div id="watch" class="flex0p3 fdrow ac">
+
+                            <div>
+                                <button>Watch</button>
+                            </div>
+
+                            <div>
+                                <img src="./media/watch3icons.png" alt="">
+                            </div>
+
+                            <div id="watchpara" >
+                                <p class="alex opaquept5">+5 friends are watching</p>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div id="bannerright" class="ac jc ">
+                        <div id="bannerpic" >
+                            <img src="./media/6.png" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div id="parties" class="ac darkbackgrd alex whitetext">
+                <div id="actualparties">
+                    Parties
+                </div>
+            </div>
+
+            <div id="pcards" class="darkbackgrd hidescrollbar">
+
+                <div id="card1" class="wndcard alex ac whitetext">
+
+                    <div id="actualcard1">
+                        <div id="cardimg" >
+                            <img src="./media/spider.png" alt="">
+                        </div>
+
+                        <div id="cardtitle" class="martopbot5px">
+                            <p>Spider Man</p>
+                        </div>
+
+                        <div id="cardsubtitle" class="martopbot5px">
+                            <p class="opaquept5">Science Fiction, Fantasy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard alex ac whitetext">
+
+                    <div id="actualcard1">
+                        <div id="cardimg" >
+                            <img src="./media/spider.png" alt="">
+                        </div>
+
+                        <div id="cardtitle" class="martopbot5px">
+                            <p>Spider Man</p>
+                        </div>
+
+                        <div id="cardsubtitle" class="martopbot5px">
+                            <p class="opaquept5">Science Fiction, Fantasy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard alex ac whitetext">
+
+                    <div id="actualcard1">
+                        <div id="cardimg" >
+                            <img src="./media/spider.png" alt="">
+                        </div>
+
+                        <div id="cardtitle" class="martopbot5px">
+                            <p>Spider Man</p>
+                        </div>
+
+                        <div id="cardsubtitle" class="martopbot5px">
+                            <p class="opaquept5">Science Fiction, Fantasy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard alex ac whitetext">
+
+                    <div id="actualcard1">
+                        <div id="cardimg" >
+                            <img src="./media/spider.png" alt="">
+                        </div>
+
+                        <div id="cardtitle" class="martopbot5px">
+                            <p>Spider Man</p>
+                        </div>
+
+                        <div id="cardsubtitle" class="martopbot5px">
+                            <p class="opaquept5">Science Fiction, Fantasy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard alex ac whitetext">
+
+                    <div id="actualcard1">
+                        <div id="cardimg" >
+                            <img src="./media/spider.png" alt="">
+                        </div>
+
+                        <div id="cardtitle" class="martopbot5px">
+                            <p>Spider Man</p>
+                        </div>
+
+                        <div id="cardsubtitle" class="martopbot5px">
+                            <p class="opaquept5">Science Fiction, Fantasy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+
+            </div>
+
+            <div id="continue" class="ac darkbackgrd whitetext alex">
+                <div id="actualcontinue">
+                    Continue Watching
+                </div>
+            </div>
+
+            <div id="pcards" class="darkbackgrd hidescrollbar">
+
+                <div id="card1" class="wndcard alex ac jc whitetext">
+
+                    <div id="imagecard1">
+                        
+                            <!-- <img src="./media/spider.png" alt=""> -->
+                            <img src="https://images.unsplash.com/photo-1669824137673-91f8f75f87fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                      
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard alex ac jc whitetext">
+
+                    <div id="imagecard1">
+                        
+                            <!-- <img src="./media/spider.png" alt=""> -->
+                            <img src="https://images.unsplash.com/photo-1669824137673-91f8f75f87fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                      
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard alex ac jc whitetext">
+
+                    <div id="imagecard1">
+                        
+                            <!-- <img src="./media/spider.png" alt=""> -->
+                            <img src="https://images.unsplash.com/photo-1669824137673-91f8f75f87fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                      
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard alex ac jc whitetext">
+
+                    <div id="imagecard1">
+                        
+                            <!-- <img src="./media/spider.png" alt=""> -->
+                            <img src="https://images.unsplash.com/photo-1669824137673-91f8f75f87fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                      
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard alex ac jc whitetext">
+
+                    <div id="imagecard1">
+                        
+                            <!-- <img src="./media/spider.png" alt=""> -->
+                            <img src="https://images.unsplash.com/photo-1669824137673-91f8f75f87fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                      
+                    </div>
+
+                </div>
+
+                <div id="card1" class="wndcard">
+
+                </div>
+
+                <div id="card2" class="wndcard">
+
+                </div>
+
+                <div id="card3" class="wndcard">
+
+                </div>
+
+                <div id="card4" class="wndcard">
+
+                </div>
+
+                <div id="card5" class="wndcard">
+
+                </div>
+
+                <div id="card6" class="wndcard">
+
+                </div>
+
+
+            </div>
+
+            <!-- <div id="ccards" class="fdrow">
+                <div id="ccard1" class="wndcard">
+
+                </div>
+
+                <div id="ccard2" class="wndcard">
+                    
+                </div>
+
+                <div id="ccard3" class="wndcard">
+                    
+                </div>
+
+                <div id="ccard4" class="wndcard">
+                    
+                </div>
+            </div> -->
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
