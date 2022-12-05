@@ -1,0 +1,274 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.border
+{
+    border: 1px solid black;
+}
+
+.brdr-rad1p5em
+{
+    border-radius: 1.5em;
+}
+
+.hidescrollbar::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.ai
+{
+    display: flex;
+    align-items: center;
+}
+
+.jc
+{
+    display: flex;
+    justify-content: center;
+}
+
+.fdcol
+{
+    display: flex;
+    flex-direction: column;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* ! MENUBAR  */
+    #menubardiv
+    {
+        flex: 0.215;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+        #menulistdiv
+        {
+            height: 65%;
+            width: 75%;
+            margin: 15% 13%;
+        }
+
+            #emploveediv
+            {
+                height: 15%;
+            }
+
+            #menus
+            {
+                height: 80%;
+            }
+
+        #mick
+        {
+            height: 12%;
+            width: 70%;
+            margin: 0 15%;
+        }
+/* ! MAIN PAGE  */
+
+    #mainpagediv
+    {
+        flex: 0.785;
+        display: flex;
+        margin-left: 1%;
+    }
+
+        #leftdiv
+        {
+            flex: 0.47;
+            overflow-y: scroll;
+        }
+
+            #timeoffdiv
+            {
+                width: 94%;
+                margin: 0 3%;
+                /* margin-left: 7%; */
+                aspect-ratio: 470/100; 
+            }
+
+            #vacationdiv
+            {
+                /* height: 40%; */
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 470/375;
+                
+            }
+
+                #vacation
+                {
+                    height: 25%;
+                    margin: 0 4%;
+                }
+
+                #accrued
+                {
+                    height: 25%;
+                    margin: 0 4%;
+
+                }
+
+            #teamdiv
+            {
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 330/240;
+                /* height: 8em; */
+                /* width: 11em */
+            }   
+
+                #team
+                {
+                    height: 20%;
+                    margin: 0 4%;
+                }
+
+                #team1
+                {
+                    height: 20%;
+                    margin: 0 4%;
+                }
+
+                    #testicon
+                    {
+                        height: 80%;
+                        aspect-ratio: 1/1;
+                    }
+
+                    #testicon img
+                    {
+                        width: 100%;
+                    }
+
+            #testdiv
+            {
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 1/1;
+            }
+
+        #rightdiv
+        {
+            flex: 0.53;
+            overflow-y: scroll;
+        }
+
+            #reqtimeoffdiv
+            {
+                width: 94%;
+                margin: 0 3%;
+                aspect-ratio: 5.3/1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+                #request
+                {
+                    height: 50%;
+                    /* width: 40%; */
+                    width: auto;
+                    border-radius: 15px;
+                }
+
+            #calendardiv
+            {
+                /* height: 40%; */
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 515/460;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+                #calendar
+                {
+                    flex: 1;
+                    margin: 0 4%;
+                }
+
+                #numbers
+                {
+                    flex: 3;
+                    margin: 0 4%;
+                }
+
+                #sickleavesdiv
+                {
+                    flex: 1;
+                    margin: 0 4%;
+                }
+
+            #upcomingdiv
+            {
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 380/165;
+                /* height: 8em; */
+                /* width: 11em */
+            }
+
+                #upcoming
+                {
+                    margin: 0 4%;
+                    height: 33.33%;
+                }
+
+                #dayof
+                {
+                    margin: 0 4%;
+                    height: 33.33%;
+                    
+                }
+
+            #testdiv2
+            {
+                width: 94%;
+                margin: 3%;
+                aspect-ratio: 1/1;
+            }
+
+/* ! MEDIA QUERIES */
+
+@media screen and (max-width: 500px) 
+{
+
+    #menubardiv
+    {
+        display: none;
+    }
+
+    #mainpagediv
+    {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    #leftdiv
+    {
+        height: 100vh;
+    }
+
+    body
+    {
+        width: 100%;
+        height: 200vh;
+    }
+}
