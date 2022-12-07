@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>06 Dec</title>
+</head>
+<body>
+    <!-- ! MENUBAR -->
+    <div id="menubardiv" class="border ai">
+
+        <div id="menulistdiv" class="border">
+
+            <div id="emploveediv" class="border">
+
+                <div id="e1" class="border fdrow">
+
+                    <div id="e1icon" class="border">
+                        <!-- <img src="data:image/png;base64,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"> -->
+
+                    </div>
+
+                    <div id="e1title" class="border ai">
+                        <!-- <p><span style="color: white;" >emp<span style="color: #6a69ee;">love</span>e</span></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="menus" class="border">
+
+                <div id="m1" class="border fdrow" style="background-color: #e090c9; border-radius: 25px; color: #1b0410;">
+
+                    <div id="m1icon" class="border">
+                        <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRIie2UsWvVUBTGfyc3zZt1FIRW3ot5RFqh2smODi5S6KCr4N9Q6FS69p/oahFEXBwcHOrUaimU8JI0+ApCxzpK09wchxeR15e8FLG4+BtzvvOd+11uDlwz0lSIosjz3M6GwlKLwV5enG+GYZjX1Z26j4PBcHbG9XYV1oHOFP+OwvqM6+0OBsPZKyU4jo+fqrAN4orqy17Qez0tQZt+LEEaZ2sq8hbIbGkW2swBekHvnS3dRdBYRXbSOFtrHIDDE0AQMa5bmDbzX3heWaJiAak8GgaMOAXuqMp+kmQrbeZJkq1Yq4c4BFXvGO5Eh5Baa14Yp9gR5E2aZJ+A8wb/DvAI1X1bus+MsduXBbWvqN+fO7ko8mXgCOFe4/FHtaOLIl/u9+dO6iSTCSrCMMzTNDsDzvy73cd1mjTNPiIjbZNPbYK/yf8B/35A4yuKoshDuYlwO02yDw2yBZRvURR5f7RNgfkrHHJ+2jadTKD4xtgDEFBOgXTqfwA+Ij1j7AHKD4S0LcEt4KuIPrwsrkVIjZH7lMRV7xjjA0reA4qqLQrXtppX5LnjIGoArTzqB/hBd0thFcSvIvut7r+v1FdY9YPu1njAGuI4nnPEvAJZQviO8qXWXFhEuQG6V6p9HgTBcFLSQBRFnut6m4I8mB5APxdFvjFt4V0rPwEG1c2LEe1xnAAAAABJRU5ErkJggg=="> -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAvklEQVRIidWUQQ6DIBBF/9DewHQl9kA9CHfyJD0QuDQ9QZmuIMRUpkOrqX81kcf/MiMCRxelwp4uN+Y4ArBvuEAUXXg+7lo2B/Sm8ysbkvwU56uWNcXD2gYAGFpYU6N+ob8NCMK6/yqAKLrSZGlOhl1mU9GbjiXjKc4kMUttPoNzUQcI33YqNBctn0DT14o5AFhmM2bfyhuvSjOv/Wag6atG+QSavjYFVMyTBmFdDNhEuwZ8/APTsE0XTcMeXy+QoWEoauAC5gAAAABJRU5ErkJggg==">
+
+                    </div>
+
+                    <div id="m1title" class="border ai">
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+
+                <div id="m1" class="border fdrow">
+
+                    <div id="m1icon" class="border">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRIie2UsWvVUBTGfyc3zZt1FIRW3ot5RFqh2smODi5S6KCr4N9Q6FS69p/oahFEXBwcHOrUaimU8JI0+ApCxzpK09wchxeR15e8FLG4+BtzvvOd+11uDlwz0lSIosjz3M6GwlKLwV5enG+GYZjX1Z26j4PBcHbG9XYV1oHOFP+OwvqM6+0OBsPZKyU4jo+fqrAN4orqy17Qez0tQZt+LEEaZ2sq8hbIbGkW2swBekHvnS3dRdBYRXbSOFtrHIDDE0AQMa5bmDbzX3heWaJiAak8GgaMOAXuqMp+kmQrbeZJkq1Yq4c4BFXvGO5Eh5Baa14Yp9gR5E2aZJ+A8wb/DvAI1X1bus+MsduXBbWvqN+fO7ko8mXgCOFe4/FHtaOLIl/u9+dO6iSTCSrCMMzTNDsDzvy73cd1mjTNPiIjbZNPbYK/yf8B/35A4yuKoshDuYlwO02yDw2yBZRvURR5f7RNgfkrHHJ+2jadTKD4xtgDEFBOgXTqfwA+Ij1j7AHKD4S0LcEt4KuIPrwsrkVIjZH7lMRV7xjjA0reA4qqLQrXtppX5LnjIGoArTzqB/hBd0thFcSvIvut7r+v1FdY9YPu1njAGuI4nnPEvAJZQviO8qXWXFhEuQG6V6p9HgTBcFLSQBRFnut6m4I8mB5APxdFvjFt4V0rPwEG1c2LEe1xnAAAAABJRU5ErkJggg==">
+
+                    </div>
+
+                    <div id="m1title" class="border ai">
+                        <p>Quotations</p>
+                    </div>
+                </div>
+
+                <div id="m1" class="border fdrow">
+
+                    <div id="m1icon" class="border">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRIie2UsWvVUBTGfyc3zZt1FIRW3ot5RFqh2smODi5S6KCr4N9Q6FS69p/oahFEXBwcHOrUaimU8JI0+ApCxzpK09wchxeR15e8FLG4+BtzvvOd+11uDlwz0lSIosjz3M6GwlKLwV5enG+GYZjX1Z26j4PBcHbG9XYV1oHOFP+OwvqM6+0OBsPZKyU4jo+fqrAN4orqy17Qez0tQZt+LEEaZ2sq8hbIbGkW2swBekHvnS3dRdBYRXbSOFtrHIDDE0AQMa5bmDbzX3heWaJiAak8GgaMOAXuqMp+kmQrbeZJkq1Yq4c4BFXvGO5Eh5Baa14Yp9gR5E2aZJ+A8wb/DvAI1X1bus+MsduXBbWvqN+fO7ko8mXgCOFe4/FHtaOLIl/u9+dO6iSTCSrCMMzTNDsDzvy73cd1mjTNPiIjbZNPbYK/yf8B/35A4yuKoshDuYlwO02yDw2yBZRvURR5f7RNgfkrHHJ+2jadTKD4xtgDEFBOgXTqfwA+Ij1j7AHKD4S0LcEt4KuIPrwsrkVIjZH7lMRV7xjjA0reA4qqLQrXtppX5LnjIGoArTzqB/hBd0thFcSvIvut7r+v1FdY9YPu1njAGuI4nnPEvAJZQviO8qXWXFhEuQG6V6p9HgTBcFLSQBRFnut6m4I8mB5APxdFvjFt4V0rPwEG1c2LEe1xnAAAAABJRU5ErkJggg==">
+
+                    </div>
+
+                    <div id="m1title" class="border ai">
+                        <p>Profile</p>
+                    </div>
+                </div>
+
+                <div id="m1" class="border fdrow" >
+
+                    <div id="m1icon" class="border">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRIie2UsWvVUBTGfyc3zZt1FIRW3ot5RFqh2smODi5S6KCr4N9Q6FS69p/oahFEXBwcHOrUaimU8JI0+ApCxzpK09wchxeR15e8FLG4+BtzvvOd+11uDlwz0lSIosjz3M6GwlKLwV5enG+GYZjX1Z26j4PBcHbG9XYV1oHOFP+OwvqM6+0OBsPZKyU4jo+fqrAN4orqy17Qez0tQZt+LEEaZ2sq8hbIbGkW2swBekHvnS3dRdBYRXbSOFtrHIDDE0AQMa5bmDbzX3heWaJiAak8GgaMOAXuqMp+kmQrbeZJkq1Yq4c4BFXvGO5Eh5Baa14Yp9gR5E2aZJ+A8wb/DvAI1X1bus+MsduXBbWvqN+fO7ko8mXgCOFe4/FHtaOLIl/u9+dO6iSTCSrCMMzTNDsDzvy73cd1mjTNPiIjbZNPbYK/yf8B/35A4yuKoshDuYlwO02yDw2yBZRvURR5f7RNgfkrHHJ+2jadTKD4xtgDEFBOgXTqfwA+Ij1j7AHKD4S0LcEt4KuIPrwsrkVIjZH7lMRV7xjjA0reA4qqLQrXtppX5LnjIGoArTzqB/hBd0thFcSvIvut7r+v1FdY9YPu1njAGuI4nnPEvAJZQviO8qXWXFhEuQG6V6p9HgTBcFLSQBRFnut6m4I8mB5APxdFvjFt4V0rPwEG1c2LEe1xnAAAAABJRU5ErkJggg==">
+
+                    </div>
+
+                    <div id="m1title" class="border ai"  >
+                        <p>Order Management</p>
+                    </div>
+                </div>
+
+                <div id="m1" class="border fdrow">
+
+                    <div id="m1icon" class="border">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB/ElEQVRIie2UsWvVUBTGfyc3zZt1FIRW3ot5RFqh2smODi5S6KCr4N9Q6FS69p/oahFEXBwcHOrUaimU8JI0+ApCxzpK09wchxeR15e8FLG4+BtzvvOd+11uDlwz0lSIosjz3M6GwlKLwV5enG+GYZjX1Z26j4PBcHbG9XYV1oHOFP+OwvqM6+0OBsPZKyU4jo+fqrAN4orqy17Qez0tQZt+LEEaZ2sq8hbIbGkW2swBekHvnS3dRdBYRXbSOFtrHIDDE0AQMa5bmDbzX3heWaJiAak8GgaMOAXuqMp+kmQrbeZJkq1Yq4c4BFXvGO5Eh5Baa14Yp9gR5E2aZJ+A8wb/DvAI1X1bus+MsduXBbWvqN+fO7ko8mXgCOFe4/FHtaOLIl/u9+dO6iSTCSrCMMzTNDsDzvy73cd1mjTNPiIjbZNPbYK/yf8B/35A4yuKoshDuYlwO02yDw2yBZRvURR5f7RNgfkrHHJ+2jadTKD4xtgDEFBOgXTqfwA+Ij1j7AHKD4S0LcEt4KuIPrwsrkVIjZH7lMRV7xjjA0reA4qqLQrXtppX5LnjIGoArTzqB/hBd0thFcSvIvut7r+v1FdY9YPu1njAGuI4nnPEvAJZQviO8qXWXFhEuQG6V6p9HgTBcFLSQBRFnut6m4I8mB5APxdFvjFt4V0rPwEG1c2LEe1xnAAAAABJRU5ErkJggg==">
+
+                    </div>
+
+                    <div id="m1title" class="border ai">
+                        <p>Settings</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div id="menupicdiv" class="border fdcol ai">
+
+            
+            <div id="menupicsquare" class="border">
+                
+                <div id="menupiccircle" class="border ai jc">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABwUlEQVRoge3Vz4tNUQAH8M+MHzEYYySlYW/KBkkp7KSQhWylLJUsWFj4A2wsWSjZ2rFS9pOysbFUCiUlpsEY88a1OO96586dTPfO0+nW+dTtvXPf6b7v9753ziXLsizLsizLOmYn7uEJjiXOsiYPUPSPnziZNk57zw2KFPiKA0kTtXQGv1XLvMe+lKHauqlapMBrTKYM1dZd9TIvMJYyVBujeKxe5inWJczVykb1xV/gfspQbY3jlXqZW8snjkSvRzEVfTaHXjSeFXYUBltjqdefX1rAj9bxq6Ywg73RuQKX8ag8URa5gxtD+uKVzAsPuNI3LEbj1W7SLhxads1FnMOz+ORn9Z+vC8ccDhN2B3ipm7YKW/Xfv9YkrmF/NGlcdavbEb0fxfZovKF/0dImbB5S2H95i+N4N7LazCHZImynpW1YH40nDG7qSjfptrAZxT7gBN4MNel/dF19bXzCdMpQTV1VL/EFB1OGauoSllRLzOJIylBNXRCeH3GJ78Ka6IzzwsMuLrGA0ylDNXVKCB2X+IWzKUM1NYaPqiV6uJgyVBu7VUssCQu+kx4KJeZxJXGWNZvGntQhsizLsizLsoE/RHynnVHpW6oAAAAASUVORK5CYII=">
+
+                </div>
+
+                <div id="menusqrcontent" class="border fdcol jc">
+                    <p>Our Team Will Help You To Estimate!</p>
+                    <div class="border jc">
+                        <img src="./menu.png" class="border " alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- ! MAIN PAGE -->
+    <div id="mainpagediv" class="border hidescrollbar fdcol">
+
+        <div id="topmostdiv" class="border fdrow">
+
+            <div id="topmostleft" class="border ai">
+                <input type="text" placeholder="Search For Query">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAADjElEQVRYhb2XwW9URRzHP7/XglQPnrrdoCYYDJrs9G2pRWPUxERMPKjUilyUePQMQQxnjJpa/wcTgxq0KTXGi8EgQQ5GwX3vLYmJYKIEs+/SYkJogTc/D/sWZ2dft8tu5XvZzG9+M9/PvDfze7NCDwrDcNJaOyMiTwLbgAeAFWAZuAScttaerNfrP/Yynyvp1heG4WuqehR4rMf5zgNzcRx/Adi+ASYmJrZlWfYZ8FSPxr5+UNX9SZL8dccAYRg+q6rzwGif5i0ticjrURSd7BkgN/8OuMfLuyEiC8AicA64nMcfBCZVdRqYBjZ7464FQfBirVY7sy5A/th/wlu5qs6LyOE4ji91W4kxZnsQBLOqOuN1XbXWTtXr9d+Lxg21QEZHR78FHnX6MlU9nCTJgTRNl7qZA6RputRoNI6XSqVrIrLbWdwWETFpmn66JkAYhnuBg25Hbv7xesYFIGfL5fJ14AUn/HCpVLqYpmnk5we52VHPfL4f85aiKPoIOOHGRORAUW4QhuEk7ef8BvBuv+aO4cF8rpZ2ViqVXR0A1tq2TSMiC0mSXBwUIIqiP2iemv/MguDlDoC8vLo64ScNoEWvPdUBQLO235aInNsodxH52QuFRQBb3cDKysrfGwWwurp6xQvdWwSw6gaGh4d1owCyLPNL/ZCfEwBXPYCtflK/GhkZaZtLRDoKWgC07XhVfXyjAFR1l9e+UARw2kua3igAYI/XrnUAWGv9z+W0MWb7oM7VanWHiLzixkTkyw6A/Bp13oltDoJgdkB/ybJsDtjkxOIoijqOeJD/zrlBVZ0xxhzq1z0MwyMi4le9D4tyhwDSNK2PjY09h1OURGR3uVy+3mg0zt6BtxhjjgDv0X7ZORXH8TtFA1pPwKrqfsA9JoGqzo6Pjy9UKpVH1nOuVqs7jDGLIvK+M29LXwOF9cW/kj2vqovAfV7eTZrfiEXgF2vtZQAReYhmfd+Tb7hNFOuWqr6RJMnxrgD5Sp6x1n4D3L/GZP0qA96K4/iYG/QfFbVa7Yy1dgr4fgCzUzRvWLec2BDwiTFmn5vY9Y+JMebN/Cazs0fjBPggjuPPATXG7BORY8Cwk9P2OroB3Fa1Wn3CWvsSzfc9AWwBEJF/VPWCiPwKfFV0zteD6AlgUK0FAey9KwBdIP7s+D7/X0rTtF4qlX4TkVfJN7+ILN81gBZEuVyuAU+LyLKIvP0vky9ZzD0pCmQAAAAASUVORK5CYII=">
+
+
+            </div>
+
+            <div id="topmostright" class="border fdrow ">
+
+
+                <div id="menuicondiv" class="ai jc">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAZUlEQVRoge3WMQrCQBRF0YurM+6/TkDch7ZW0SJhJnAO3H7+VK8A4DiPaqvek7dVy94hzwke+W+v74ff9q66sqVaG//bv1qr+0l/AABwFjN+QGb8TJnxAMAVmfEDMuNnyowH4FAf9JZ/1GMxO0wAAAAASUVORK5CYII=">
+
+
+                </div>
+
+                
+                <div id="mailicon" class="border ai jc">
+                    <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAE+UlEQVRoge2ZW2gcVRjHf9/ZNa5WUGpS0Ic+SL1un6xo02KJqWgRq6Y7Z0ikFRSvldYbWkXEFESwUrQRQRRRvDTdObNusEKh9RJqbBPRBx+KIqgP4oXY+mKpq5nM50MmcU2TzWYbs1X2Bws7wznf/P8z3/zn7Cw0aNCgQYM6INZarbeIucDUW8BckR7/4pyTegqplfGO+t9ckQkj1tol9RRSC+Way6/IkOd5V9ZBT03kcrkrgE/Gt8uNLBSRfZ7ndc6/rNlhre0wxnwELBrfN2FEVV8CThWRtz3Pu78eAqvBWvsgEAKnJZqBMiNhGN4D3A8gIs95nreju7v7pAkDa23K9/0eYDsgIrI10QxMSi3n3A4R8YHfRWTzoUOHCmvXrj19njUfR6LhHVXdBPwBrA+CoLt8zHFnPAiCgjGmHfgFuCmTyXzU0dGxaPK4+aKjo+PsTCazF7gB+FVErnHO7Zw8bsrWyefzg8aYVuBr4PJ0On3QWnvhvyv5eKy1S9Lp9EFgJfBdHMcrgyDYP9XYae+BfD7/TRRFK4AB4DzgwHzGs7W2FTgInA98GkXR8kKh8NV04yvezMVi8cjRo0evBvLMYzxbaz3gQ6AZ6CuVSlcVi8XhSnNmTKU9e/b84ZzrEpGtjMXzTt/3u2eaVyvW2vsYO3EZVe3JZrO53bt3H5tp3sQyvppFY3KQ7UBKVV85fPjwxv7+/uhExSe1UyLSo6obARWRx4IgeKaKebNfNCbx7AHHROSOlpaWcC7iecOGDQuAvsRESUQ6qzFRzqwfeEEQ9MVx3A4MAzdmMpkPTySe161bd06pVNoPXA8Mx3HcFgRBMNs6NT25C4XCUBzHa4BR4Ipa4zmXy2VTqdQgcCkwGsfxmkKhMFSLppqM5HK5rDFmF5AClCSefd9fVW0Na227MWYAWJzUSBljduVyuWwtmmZtxFp7gzHmE+AC4AtjTFZVe4GFqrrP9/31M9XwPO8WYA9wFtBnjLkIGAIuMMYM+r7vz1ZX1UastSlr7TagDzhTVd8qlUor8vn8l0uXLl0vItuBJlV9w/f9J6ZacHZ3dxvP854UkdeBJhF5PpvN5vL5/NcLFixoE5HXgDNUdZe1dpu1NlWtvqrit6urqzmKol3AamBEVR8Kw/CFyeN8379XVXcw1nL7VfVZERkCEJHlqvowcCUwqqoPTFPj7qRGE/BBOp3u7O3tPTydtqrj11q7LIqizxMTPwPtUwkACILgRVW9DvgJWCUiuxlLt2FVfTcx8aOIrKlQ4yWgDfgBWB1F0efW2mUz6axoxPO8Wxlbay0GDqRSqWXOuYFKc8Iw3DsyMnKJqm5hrO+PJZ9BEXm4qanp4iAI3q9Uwzl3ELgM+Dg59kCiZVqmbK22trZ0c3PzUyKyJdn1MrDJOfdnpWJzTTU6pm2tzs7Oc1taWvYnk0vA7c65u+bbBEB/f38UhuGjInIzY1f1TuCAtXbx5LH/MOL7/srR0dHPgFbge2PMKufcq/OiugJBEPQaY1YA3wLLgM+ste3lYyZaS1U3JxF6CrAviqKuYrF4ZN5VV8BauxDYCVxLkp4i0gPHv8RWVd0mIo8750brIbYKxPf9R1T1aco6qtzIb8BtzrmwLvJmied514vIm4ytDv52FMfx5f8VEwBhGL4Xx3Hr+PaEkUq/h09WyjWfNC/gTpTGP1YNGjRo0KAB8BeI+f390KSXjgAAAABJRU5ErkJggg=="> -->
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAE9ElEQVRoge2Za4iUVRjHf8+741oWFCaCBX0Is7V5zxlswivKZmF+ECt1REGKgiArLxVWEKFCBBmSawQhRdLFS17YD0GgpWDeNtwPe867NIoVGERY25cF9zK779OHnV3Gy8zOrLZjMT8YmMs5z/z/8z7nf2bOQI0aNWrUqAJijNFqi7gRBNUWcKNIDN7x3ks1hYyUwY7631yRISPJZHJyNYWMhELNQ0aCIGix1s6tjqTKsdbOCILgxODjwtYar6qHrbUrqqCrIsIwfEpVjwITB58bMiIiHwNjVfUra+36aggsB2PMqyKyH7g1rxkoMOKcWy0i6wFU9QNrbRM3URhkMpk6Y8x2YCsgIrLZObd68PXLhDrnmkRkOdClqmuNMQfS6fS4UdZ8Fel0elw2mz0IrAF6gFXOuU2FY676xJ1zB0RkPvAn8GRPT89Ra+3EK8eNFg0NDXflcrlDwGLgb2CB937XleOu2TrOudOqOgs4JyLTVfWUtfaBf1fy1SSTycmJROKUqs4BfgXmeO+PXWts0TUQRdHPuVxutqoeB+5T1ZOjGc/GmFkickpE7lfVH0Vkpvc+W2x8ycWczWY7uru7HxORvYxiPFtrlwFHRGQC0Dx27NhHnHMXS80ZNpXOnz/f45xbKSKbGYjnXdbaTcPNGynW2nWquhe4RUS2e++Xtra2XhpuXrnxqs65Tfl4jlV1ozFmR2NjY2LYmWWSyWTqwjD8SFW3AQK86ZxbB8TlzK9on3DONQHLgEvA8x0dHftvRDxba287e/Zss4i8CHSr6grv/XuV1Kh4w/PeN+fj+SLwRG9v75HrieepU6dOUtVjqroIuCgijVEUfV1pnRHt3M65liAIFgL9wIyRxnMqlUomEonTwENAfxAEC51zLSPRNCIjqVQqGcfxHqAOUPLxbIyZV24Na+38OI6PA/fma9TFcbwnlUolR6KpYiPW2sVxHJ8ApgBtqpoEdgPjgcNhGK4qo8bTqvotcCfQHARBA9ACTInj+HQYhssr1VW2kXyqbFHVZuAO4Mv6+vrZURT95L1fJSJbgXoR+dwY83aR2kEYhhtVdSdQD2zz3i9ta2s719nZ2Qh8BtwuInvCMNySyWTqytU3dIpS6jd7Op2e0Nvbuwd4FMip6mtRFH145ThjzEtAEwMtd0xV3x8zZkwLQH9//0xV3QDMBfpV9ZVr1QjD8AURacob/b6+vn5Fa2vrX8W0Deof1ogxJg0cZKCX/wiCINPW1na8WOEwDBeIyE5gUpEhvwPPeO+/KyFuFrAPuAe4ACzx3reWMlKytYwxzwKDC/JkIpFIlzIBEEXRobq6ugeBNxjo+0v522lV3dDV1TW1lAkA7/2pOI4fBn7Iv/fxvJaiXPOKNDY2Jjo6Ot7JiwHYEcfxmvb29t5SxW405ego2lrTpk27u6+vbz8wi4Fd9uUoij4dTQNXYq1dqaqfAOOA1jiOl7S3t1+AIq2VTCbn9PX1nWHAxG9xHM+rtgkA59zuOI5nA78A6SAIzlhr5xeOGboiqro2H6FjgMO5XG5lNpvtGH3ZxUkmk+NFZJeIPE4+PUVkO1x9iK3AloaGhrf27dvXXxW1wyPGmNeBdyk8BSow0ikizznn9ldFXoWEYbhIRL5g4NvBZWtk+n/FBEAURd8wsJaBAiOlfg/frBRqvmkO4K6X2j9WNWrUqFGjBvAPRmEiVuKG1z4AAAAASUVORK5CYII=">
+
+
+
+                </div>
+
+                <div id="mailicon" class="border ai jc">
+                    <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAE+UlEQVRoge2ZW2gcVRjHf9/ZNa5WUGpS0Ic+SL1un6xo02KJqWgRq6Y7Z0ikFRSvldYbWkXEFESwUrQRQRRRvDTdObNusEKh9RJqbBPRBx+KIqgP4oXY+mKpq5nM50MmcU2TzWYbs1X2Bws7wznf/P8z3/zn7Cw0aNCgQYM6INZarbeIucDUW8BckR7/4pyTegqplfGO+t9ckQkj1tol9RRSC+Way6/IkOd5V9ZBT03kcrkrgE/Gt8uNLBSRfZ7ndc6/rNlhre0wxnwELBrfN2FEVV8CThWRtz3Pu78eAqvBWvsgEAKnJZqBMiNhGN4D3A8gIs95nreju7v7pAkDa23K9/0eYDsgIrI10QxMSi3n3A4R8YHfRWTzoUOHCmvXrj19njUfR6LhHVXdBPwBrA+CoLt8zHFnPAiCgjGmHfgFuCmTyXzU0dGxaPK4+aKjo+PsTCazF7gB+FVErnHO7Zw8bsrWyefzg8aYVuBr4PJ0On3QWnvhvyv5eKy1S9Lp9EFgJfBdHMcrgyDYP9XYae+BfD7/TRRFK4AB4DzgwHzGs7W2FTgInA98GkXR8kKh8NV04yvezMVi8cjRo0evBvLMYzxbaz3gQ6AZ6CuVSlcVi8XhSnNmTKU9e/b84ZzrEpGtjMXzTt/3u2eaVyvW2vsYO3EZVe3JZrO53bt3H5tp3sQyvppFY3KQ7UBKVV85fPjwxv7+/uhExSe1UyLSo6obARWRx4IgeKaKebNfNCbx7AHHROSOlpaWcC7iecOGDQuAvsRESUQ6qzFRzqwfeEEQ9MVx3A4MAzdmMpkPTySe161bd06pVNoPXA8Mx3HcFgRBMNs6NT25C4XCUBzHa4BR4Ipa4zmXy2VTqdQgcCkwGsfxmkKhMFSLppqM5HK5rDFmF5AClCSefd9fVW0Na227MWYAWJzUSBljduVyuWwtmmZtxFp7gzHmE+AC4AtjTFZVe4GFqrrP9/31M9XwPO8WYA9wFtBnjLkIGAIuMMYM+r7vz1ZX1UastSlr7TagDzhTVd8qlUor8vn8l0uXLl0vItuBJlV9w/f9J6ZacHZ3dxvP854UkdeBJhF5PpvN5vL5/NcLFixoE5HXgDNUdZe1dpu1NlWtvqrit6urqzmKol3AamBEVR8Kw/CFyeN8379XVXcw1nL7VfVZERkCEJHlqvowcCUwqqoPTFPj7qRGE/BBOp3u7O3tPTydtqrj11q7LIqizxMTPwPtUwkACILgRVW9DvgJWCUiuxlLt2FVfTcx8aOIrKlQ4yWgDfgBWB1F0efW2mUz6axoxPO8Wxlbay0GDqRSqWXOuYFKc8Iw3DsyMnKJqm5hrO+PJZ9BEXm4qanp4iAI3q9Uwzl3ELgM+Dg59kCiZVqmbK22trZ0c3PzUyKyJdn1MrDJOfdnpWJzTTU6pm2tzs7Oc1taWvYnk0vA7c65u+bbBEB/f38UhuGjInIzY1f1TuCAtXbx5LH/MOL7/srR0dHPgFbge2PMKufcq/OiugJBEPQaY1YA3wLLgM+ste3lYyZaS1U3JxF6CrAviqKuYrF4ZN5VV8BauxDYCVxLkp4i0gPHv8RWVd0mIo8750brIbYKxPf9R1T1aco6qtzIb8BtzrmwLvJmied514vIm4ytDv52FMfx5f8VEwBhGL4Xx3Hr+PaEkUq/h09WyjWfNC/gTpTGP1YNGjRo0KAB8BeI+f390KSXjgAAAABJRU5ErkJggg=="> -->
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABXElEQVRIie2VP0vDQBjGf2dyKSgU2q4FaXKbYv0Ygpvo0g+gFCed3HR19Ys4FdTNj9CxpUmHxjWDbiXmdYnQRtJei4Oiz3IP9z5/kjtI4LdD2QqDIDAi8gCglDoIw3Bk49uwLRCREyAAgpxbwVkmMMZUarXaOdAF6vn2dr1ep9Fo9JMkeV/kX3hExphmlmU9YK9E0ndd93A4HL6UZZQekTGmMhM+AY611lWtdVUpdQQMgHaapj1jTKUsxy0bZFnW/QyfTqf7cRwnM+P7ZrP57HleH2iLyBlwt9IbAJ18vSiEAxDHcSIilwAi0inObQp2ALTWT2UCx3Eec7q7TsEmwGAweCsTjEaj15xurVPwLfgv+KEFvu/f5DS1yEgLnjl8+RblwmvLByziNoqiq2UFsmY4AFEUzWVa/3BarVaolPIBRCQaj8eBjc/6kpVS3gzXtr5VCk6BGJjk/I/gA3z8ayPy8Ey1AAAAAElFTkSuQmCC">
+
+
+
+
+                </div>
+
+                <div id="user" class="border fdrow ai">
+
+                    <div id="username" class="border fdcol jc">
+                        <p id="name">Tanima Adams</p>
+                        <p id="desig">Super Admin</p>
+                    </div>
+
+                    <div id="usericon" class="border ai jc">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="overviewdiv" class="border ai">
+            <p>Overview</p>
+        </div>
+
+        <div id="cardsdiv" class="border fdrow hidescrollbar">
+
+            <div id="firstcard" class="border fdcol jc">
+
+                <div id="cardicon" class="border jc">
+                    <div id="roundicon" class="border jc ai" style="background-color:#7fbb9b ; border-radius: 50%; aspect-ratio: 35/35; height: 35px;">
+                        <img height="60%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAhUlEQVRIie2UQQqAMAwEG1+nPsSHW/8xHkTIodJuBKni3Eo3Cd2wTekzADOQKZOBKaL1A64KTtaI1lwRtVeamanaoSa8S7cDtsp9vjtg8U0KzZfzEFqywqM7aPY1GrQJWK+CA4xOqwdNoc+ghXxVUHyt6PAW/p+dNKA5aKL2AC1ozdr3swMEAcPDuplOcgAAAABJRU5ErkJggg==">
+
+
+                    </div>
+                </div>
+
+                <div id="cardtitle" class="border ai jc">
+                    <p>2.3k</p>
+                </div>
+
+                <div id="cardsubtitle" class="border ai jc">
+                    <p>Total Request</p>
+                </div>
+
+                <div id="cardpercent" class="border ai jc">
+                    <p>100%</p>
+                </div>
+            </div>
+
+            <div id="firstcard" class="border fdcol jc" style="background-color: #8d88ce; color: #fefefe;">
+
+                <div id="cardicon" class="border jc">
+                    <div id="roundicon" class="border jc ai" style="background-color:#fefefe ; border-radius: 50%; aspect-ratio: 35/35; height: 35px;">
+                        <!-- <img height="60%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAhUlEQVRIie2UQQqAMAwEG1+nPsSHW/8xHkTIodJuBKni3Eo3Cd2wTekzADOQKZOBKaL1A64KTtaI1lwRtVeamanaoSa8S7cDtsp9vjtg8U0KzZfzEFqywqM7aPY1GrQJWK+CA4xOqwdNoc+ghXxVUHyt6PAW/p+dNKA5aKL2AC1ozdr3swMEAcPDuplOcgAAAABJRU5ErkJggg=="> -->
+                        <img height="60%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAsklEQVRIidWUwQ3CMAxFnyPGKAzBGAySCTgwATcG6CSMwRBkjpgLjSIEoTa0av8pkX/85R/bsHbIcLicbwcJ2it0b0gpQzye9lcrN5TAhwcACp0IvYcb6kCzVmXr4YYW7x9YpoBA+kK4/ySQIdZJXpNL1jhcNx6BZwvuxnAn/4NSgUBqtl9liWvQLL5aBq1UYPF1UYNWKrD4aoFr2bkELL66BKbCfAKWBeZadpZBs3DXjwd+tmEhuoV/HQAAAABJRU5ErkJggg==">
+
+
+
+                    </div>
+                </div>
+
+                <div id="cardtitle" class="border ai jc">
+                    <p>823</p>
+                </div>
+
+                <div id="cardsubtitle" class="border ai jc" style=" color: #fefefe;">
+                    <p>Total Approval</p>
+                </div>
+
+                <div id="cardpercent" class="border ai jc" style=" color: #fefefe;">
+                    <p>30.9%</p>
+                </div>
+            </div>
+
+            <div id="firstcard" class="border fdcol jc">
+
+                <div id="cardicon" class="border jc">
+                    <div id="roundicon" class="border jc ai" style="background-color:#f4907f ; border-radius: 50%; aspect-ratio: 35/35; height: 35px;">
+                        <img height="60%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAhUlEQVRIie2UQQqAMAwEG1+nPsSHW/8xHkTIodJuBKni3Eo3Cd2wTekzADOQKZOBKaL1A64KTtaI1lwRtVeamanaoSa8S7cDtsp9vjtg8U0KzZfzEFqywqM7aPY1GrQJWK+CA4xOqwdNoc+ghXxVUHyt6PAW/p+dNKA5aKL2AC1ozdr3swMEAcPDuplOcgAAAABJRU5ErkJggg==">
+
+
+                    </div>
+                </div>
+
+                <div id="cardtitle" class="border ai jc">
+                    <p>1.2k</p>
+                </div>
+
+                <div id="cardsubtitle" class="border ai jc">
+                    <p>Pending Request</p>
+                </div>
+
+                <div id="cardpercent" class="border ai jc" style="color: #f4907f;">
+                    <p>59.8%</p>
+                </div>
+            </div>
+
+            <div id="firstcard" class="border fdcol jc">
+
+                <div id="cardicon" class="border jc">
+                    <div id="roundicon" class="border jc ai" style="background-color:#80b0f7 ; border-radius: 50%; aspect-ratio: 35/35; height: 35px;">
+                        <img height="60%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAhUlEQVRIie2UQQqAMAwEG1+nPsSHW/8xHkTIodJuBKni3Eo3Cd2wTekzADOQKZOBKaL1A64KTtaI1lwRtVeamanaoSa8S7cDtsp9vjtg8U0KzZfzEFqywqM7aPY1GrQJWK+CA4xOqwdNoc+ghXxVUHyt6PAW/p+dNKA5aKL2AC1ozdr3swMEAcPDuplOcgAAAABJRU5ErkJggg==">
+
+
+                    </div>
+                </div>
+
+                <div id="cardtitle" class="border ai jc">
+                    <p>200</p>
+                </div>
+
+                <div id="cardsubtitle" class="border ai jc">
+                    <p>Rejected Request</p>
+                </div>
+
+                <div id="cardpercent" class="border ai jc" style="color: #80b0f7;">
+                    <p>10.2%</p>
+                </div>
+            </div>
+
+            <div id="firstcard" class="border fdcol jc">
+
+                <div id="cardicon" class="border jc">
+                    <div id="roundicon" class="border jc ai" style="background-color:#e090c9 ; border-radius: 50%; aspect-ratio: 35/35; height: 35px;">
+                        <img height="60%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAhUlEQVRIie2UQQqAMAwEG1+nPsSHW/8xHkTIodJuBKni3Eo3Cd2wTekzADOQKZOBKaL1A64KTtaI1lwRtVeamanaoSa8S7cDtsp9vjtg8U0KzZfzEFqywqM7aPY1GrQJWK+CA4xOqwdNoc+ghXxVUHyt6PAW/p+dNKA5aKL2AC1ozdr3swMEAcPDuplOcgAAAABJRU5ErkJggg==">
+
+
+                    </div>
+                </div>
+
+                <div id="cardtitle" class="border ai jc">
+                    <p>102</p>
+                </div>
+
+                <div id="cardsubtitle" class="border ai jc">
+                    <p>Under Review Request</p>
+                </div>
+
+                <div id="cardpercent" class="border ai jc" style="color: #e090c9;">
+                    <p>10.2%</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="graphdiv" class="border fdrow">
+
+            <div id="graph1" class="border fdcol " >
+
+                <div id="graph1quotation" class="border fdrow">
+                    <div id="todayleft" class="border ai">
+                        <p>Quotation Overview</p>
+                    </div>
+
+                    <div id="todayright" class="border fdrow ai">
+                        <p>15 Days</p>
+
+                        <div id="todaydropdown" class="border ai jc">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABoUlEQVRIie2SO08UYRSGn3d2oLClpmS5/AEqG40VFEhPCSQYCdHYmMgfMBaa0Bg7tFFgZS5otjBb2aExJjABCxMSvEWFsIQE3Dk2zmYze2FZJzEmvNX3nfec5813gXP9awlgdHT8agz3Bb1ZQA12ctKs7y8/dwBMLGQFBxD0xmYLAM6fyE9ZwWv0uRoQy24BlinemK8GvPALr5A9yQwuexyGK2E1AKDbZQ74lgH++4nLzWSTSxZRFB3l+4a+Isb+Cm+aeemtvE62SvsjI+NFxJUO6aUwKFyi5j2ddEulK54CDjugH+Ucd5LUZ8mluz5E0V5/ftCAy2ehmzQf+Eteul53AoBy+cddwdu26dL7L7s99xpZDQNKpdIviWmg0gY+lsXT6+sPTxqZdVeUaGtrc7c/P9QDDLeiG/YgDAqPmvkNT5Do+PjCbYyPzeHsuE7lTitGy4BicfFQ0rWmDbLrnucddBwAEATLa0jP6gyzp2t+YfW0+VMDAKzizIJ+VgtiX3JvtDPb9JFrtb29Ue4bGHijWBeBPUwTYbj0rp3Z/1+/ATLHhlDiKKRsAAAAAElFTkSuQmCC">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="graph1newrequest" class="border">
+                    <div id="approved1" class="border fdrow">
+                    
+                        <div id="approvedleft" class="border fdrow ai">
+    
+                            <div id="color" class="border" style="background-color: #7db1fd;">
+                                
+                            </div>
+                            <p id="aleft87">13.7k</p>
+                            <p id="aleftapprov">New Request</p>
+                        </div>
+    
+                        
+    
+                        <div id="approvedright" class="border fdrow">
+                            <div id="approvedleft" class="border fdrow ai">
+    
+                                <div id="color" class="border" style="background-color: #e090c9;">
+                                    
+                                </div>
+                                <p id="aleft87">23.8k</p>
+                                <p id="aleftapprov">Under Review</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="graph1bars" class="border fdrow">
+
+
+                    <div id="yaxis" class="border fdcol flex1 ">
+                        <p>5k</p>
+                        <p>4k</p>
+                        <p>3k</p>
+                        <p>2k</p>
+                        <p>1k</p>
+                        <p>0</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1">
+
+                        
+                        <div id="b1" class="border">
+                            
+                        </div>
+
+                        <p>S</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1">
+
+                        
+                        <div id="b1" class="border" style="height: 50px;">
+                            
+                        </div>
+
+                        <p>M</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 130px; background-color: #8d88cd;">
+                            
+                        </div>
+
+                        <p>T</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border">
+                            
+                        </div>
+
+                        <p>S</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 50px;">
+                            
+                        </div>
+
+                        <p>M</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 130px; background-color: #8d88cd;">
+                            
+                        </div>
+
+                        <p>T</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 50px;">
+                            
+                        </div>
+
+                        <p>M</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 90px; background-color: #8d88cd;">
+                            
+                        </div>
+
+                        <p>T</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 120px; background-color: #8d88cd;">
+                            
+                        </div>
+
+                        <p>T</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 50px;">
+                            
+                        </div>
+
+                        <p>M</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 70px;">
+                            
+                        </div>
+
+                        <p>M</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 110px; background-color: #8d88cd;">
+                            
+                        </div>
+
+                        <p>T</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 50px;">
+                            
+                        </div>
+
+                        <p>M</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 80px; background-color: #8d88cd;">
+                            
+                        </div>
+
+                        <p>T</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 100px;">
+                            
+                        </div>
+
+                        <p>M</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 110px; background-color: #8d88cd;">
+                            
+                        </div>
+
+                        <p>T</p>
+                    </div>
+
+                    <div id="theb1" class="border fdcol ai flex1 ">
+
+                        
+                        <div id="b1" class="border" style="height: 60px;">
+                            
+                        </div>
+
+                        <p>M</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="graph2" class="border fdcol">
+
+                <div id="todays" class="border fdrow ai">
+                    
+                    <div id="todayleft" class="border">
+                        <p>Today's Status</p>
+                    </div>
+
+                    <div id="todayright" class="border fdrow ai">
+                        <p>15 Days</p>
+                        <div id="todaydropdown" class="border ai jc">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABoUlEQVRIie2SO08UYRSGn3d2oLClpmS5/AEqG40VFEhPCSQYCdHYmMgfMBaa0Bg7tFFgZS5otjBb2aExJjABCxMSvEWFsIQE3Dk2zmYze2FZJzEmvNX3nfec5813gXP9awlgdHT8agz3Bb1ZQA12ctKs7y8/dwBMLGQFBxD0xmYLAM6fyE9ZwWv0uRoQy24BlinemK8GvPALr5A9yQwuexyGK2E1AKDbZQ74lgH++4nLzWSTSxZRFB3l+4a+Isb+Cm+aeemtvE62SvsjI+NFxJUO6aUwKFyi5j2ddEulK54CDjugH+Ucd5LUZ8mluz5E0V5/ftCAy2ehmzQf+Eteul53AoBy+cddwdu26dL7L7s99xpZDQNKpdIviWmg0gY+lsXT6+sPTxqZdVeUaGtrc7c/P9QDDLeiG/YgDAqPmvkNT5Do+PjCbYyPzeHsuE7lTitGy4BicfFQ0rWmDbLrnucddBwAEATLa0jP6gyzp2t+YfW0+VMDAKzizIJ+VgtiX3JvtDPb9JFrtb29Ue4bGHijWBeBPUwTYbj0rp3Z/1+/ATLHhlDiKKRsAAAAAElFTkSuQmCC">
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dots" class="border ai jc">
+
+                    <img src="./g2.png" alt="">
+                    <!-- <svg viewBox="0 0 100 100" width="100" height="100">
+                        <defs>
+                          <path id="circle"
+                            d="
+                              M 50, 50
+                              m -37, 0
+                              a 37,37 0 1,1 74,0
+                              a 37,37 0 1,1 -74,0"/>
+                        </defs>
+                        <text>
+                          <textPath xlink:href="#circle">
+                            ........
+                          </textPath>
+                        </text>
+                      </svg> -->
+                </div>
+
+                <div id="approved" class="border fdrow">
+                    
+                    <div id="approvedleft" class="border fdrow ai">
+
+                        <div id="color" class="border" style="background-color: #7db1fd;">
+                            
+                        </div>
+                        <p id="aleft87">87</p>
+                        <p id="aleftapprov">Approved</p>
+                    </div>
+
+                    
+
+                    <div id="approvedright" class="border fdrow">
+                        <div id="approvedleft" class="border fdrow ai">
+
+                            <div id="color" class="border" style="background-color: #e090c9;">
+                                
+                            </div>
+                            <p id="aleft87">30</p>
+                            <p id="aleftapprov">Under Review</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="enquirymgmt" class="border fdcol hidescrollbar">
+
+            <div id="enquiryheaders" class="fdrow ai">
+
+                <div id="t1" class="border flex1p5 minwdt100px">
+                    <p>Enquiry Management</p>
+                </div>
+
+                <div id="t2" class="border flex1 minwdt100px">
+                    <p>Code Number</p>
+                </div>
+
+                <div id="t3" class="border flex1 minwdt100px">
+                    <p>Pickup Location</p>
+                </div>
+
+                <div id="t4" class="border flex1 minwdt100px">
+                    <p>Drop Location</p>
+                </div>
+
+                <div id="t5" class="border flex1 minwdt100px">
+                    <p>Weight</p>
+                </div>
+
+                <div id="t6" class="border flex1 minwdt100px">
+                    <p>Load Type</p>
+                </div>
+
+                <div id="t7" class="border flex1 minwdt100px">
+                    <p>Status</p>
+                </div>
+            </div>
+
+            
+
+            <div id="anton" class="border fdrow ai">
+
+                <div id="a1" class="border flex1p5 fdrow ai minwdt100px">
+                    <div id="a1icon">
+
+                    </div>
+
+                    <div id="a1name" class="border flex1 fdcol">
+                        <p id="name">Anton Coop</p>
+                        <p id="desig">Lead PRM</p>
+                    </div>
+                </div>
+
+                <div id="a2" class="border flex1 ai minwdt100px">
+                    <div id="a2greybox" class="border ai jc">
+                        <p>UKUI902-ARC</p>
+                    </div>
+                </div>
+
+                <div id="a3" class="border flex1 minwdt100px">
+                    <p>Australia</p>
+                </div>
+
+                <div id="a4" class="border flex1 minwdt100px">
+                    <p>Melbourne</p>
+                </div>
+
+                <div id="a5" class="border flex1 minwdt100px">
+                    <p>3.8 Tonne</p>
+                </div>
+
+                <div id="a6" class="border flex1 minwdt100px">
+                    <p>Bulk Shipping</p>
+                </div>
+
+                <div id="a7" class="border flex1 ai minwdt100px">
+                    <div id="a7colorbox" class="border ai jc">
+                        <p>Shipped</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="anton" class="border fdrow ai">
+                <div id="a1" class="border flex1p5 fdrow ai">
+                    <div id="a1icon" style="background-color: #8d87cd;">
+
+                    </div>
+
+                    <div id="a1name" class="border flex1 fdcol">
+                        <p id="name">Anton Coop</p>
+                        <p id="desig">Lead PRM</p>
+                    </div>
+                </div>
+
+                <div id="a2" class="border flex1 ai">
+                    <div id="a2greybox" class="border ai jc">
+                        <p>UKUI902-ARC</p>
+                    </div>
+                </div>
+
+                <div id="a3" class="border flex1">
+                    <p>Australia</p>
+                </div>
+
+                <div id="a4" class="border flex1">
+                    <p>Melbourne</p>
+                </div>
+
+                <div id="a5" class="border flex1">
+                    <p>3.8 Tonne</p>
+                </div>
+
+                <div id="a6" class="border flex1">
+                    <p>Bulk Shipping</p>
+                </div>
+
+                <div id="a7" class="border flex1 ai">
+                    <div id="a7colorbox" class="border ai jc" style="background-color: #fcf3fd; color: #cf94bf;">
+                        <p >Shipped</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
