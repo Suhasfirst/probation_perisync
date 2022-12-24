@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>16 Dec</title>
+</head>
+
+<body id="thebody" class="br">
+
+    <!-- ! MENUBAR -->
+    <div id="menubar" class="br fdcol">
+
+        <div id="menubar-logo" class="br ai">
+
+            <div id="menubar-logo-in" class="br fdrow">
+
+                <div id="mb-lg-in-logo" class="br fdcol">
+
+                    <div id="mb-lg-top" class="br fdrow">
+
+                        <div id="mb-lg-top-left" class="br">
+
+                        </div>
+
+                        <div id="mb-lg-top-right" class="br">
+
+                        </div>
+                    </div>
+
+                    <div id="mb-lg-bottom" class="br fdrow">
+
+                        <div id="mb-lg-bottom-left" class="br">
+
+                        </div>
+
+                        <div id="mb-lg-bottom-right" class="br">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="logotext" class="br ai">
+
+                    <p>INIBANK<span style="font-size: 8px;"> INC</span></p>
+                </div>
+            </div>
+
+            <div id="opnclsbtn" class="br ai jc" onclick="hideshow()">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+
+            </div>
+
+            <div id="opnclsbtn2" class="br ai jc" onclick="hideshow()">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+            </div>
+        </div>
+
+        <div id="menubar-menus" class="br">
+
+            <div id="menubar-menus-in" class="br fdcol">
+
+                <!-- ! MENU1 -->
+                <div id="menu1" class="br fdrow">
+
+                    <div id="m1icon11" class="br ai greycol" style="color: #19a8f5;">
+                        <i class="fa fa-th-large" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div id="m1text" class="br ai " style="color: #19a8f5;" onclick="hsbody()">
+                        <p id="mt1">Overview</p>
+                    </div>
+
+                    <div id="m1icon2" class="br">
+
+
+                    </div>
+                </div>
+                <!-- ! MENU2 -->
+                <div id="menu1" class="br fdrow">
+
+                    <div id="m1icon22" class="br ai greycol" style="font-size: 10px;">
+                        <i style="font-size: 20px;" class="fa fa-credit-card" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div id="m1text" class="br ai greycol">
+                        <p id="mt2">Cards</p>
+                    </div>
+
+                    <div id="m1icon2" class="br ai jc">
+
+                        <div id="menu-redbox" class="br ai jc">
+                            <p>4</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! MENU3 -->
+
+                <div id="menu1" class="br fdrow">
+
+                    <div id="m1icon33" class="br ai ">
+                        <i style="font-size: 20px;" class="fa fa-money " aria-hidden="true"></i>
+
+                    </div>
+
+                    <div id="m1text" class="br ai ">
+                        <p id="mt3">Payments</p>
+                    </div>
+
+                    <div id="m1icon2" class="br ai jc">
+
+                        <div id="menu-redbox" class="br ai jc">
+                            <p>13</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! MENU4 -->
+
+                <div id="menu1" class="br fdrow" >
+
+                    <div id="m1icon44" class="br ai" style="color: #141414;">
+                        <i style="font-size: 20px;" class="fa fa-bar-chart" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div id="m1text" class="br ai " style="color: #141414; font-weight: 900;">
+                        <p id="mt4">Activity</p>
+                    </div>
+
+                    <div id="m1icon2" class="br ai jc" style="color: #141414; " onclick="hssubmenu()">
+                        <i id="up" style="rotate: 90deg; margin-right: 12%; font-weight: 900;" class="fa fa-angle-left br" aria-hidden="true"></i>
+                        <!-- <i id="down" style="rotate: -90deg; margin-right: 12%; font-weight: 900; display: none;" class="fa fa-angle-left br" aria-hidden="true"></i> -->
+
+                       
+                    </div>
+
+                </div>
+
+                <div id="activity-submenu" class="br fdcol">
+
+                    <div id="as-m1" class="br ai">
+                        <p>Earnings</p>
+                    </div>
+
+                    <div id="as-m2" class="br ai infunds" style="background-color: #f8f9fb;">
+                        <p id="">Infunds</p>
+                    </div>
+
+                    <div id="as-m1" class="br ai">
+                        <p>Refunds</p>
+                    </div>
+                </div>
+
+                <!-- ! MENU5 -->
+
+                <div id="menu5" class="br fdrow" >
+
+                    <div id="m1icon55" class="br ai" style="color: #6a6a6a;">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div id="m1text" class="br ai " style="color: #6a6a6a;">
+                        <p id="mt5">Setting</p>
+                    </div>
+
+                    <div id="m1icon2" class="br ai jc" style="color: white;">
+                        <div id="blue-new" class="br">
+                            <p>New!</p>
+                        </div>
+                       
+                    </div>
+
+                </div>
+
+                <!-- ! MENU6 -->
+
+                <div id="menu1" class="br fdrow" >
+
+                    <div id="m1icon66" class="br ai" style="color: #6a6a6a;">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div id="m1text" class="br ai " style="color: #6a6a6a;">
+                        <p id="mt6">Log out</p>
+                    </div>
+
+                    <div id="m1icon2" class="br ai jc" style="color: white;">
+                        
+                       
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="menubar-menus-in2" class="br fdcol">
+
+                <!-- ! MENU1 -->
+                <div id="menu1" class="br fdrow">
+
+                    <div id="m1icon11" class="br ai greycol" style="color: #19a8f5;">
+                        <i class="fa fa-th-large" aria-hidden="true"></i>
+
+                    </div>
+
+                    
+                </div>
+                <!-- ! MENU2 -->
+                <div id="menu1" class="br fdrow">
+
+                    <div id="m1icon22" class="br ai greycol" style="font-size: 10px;">
+                        <i style="font-size: 20px;" class="fa fa-credit-card" aria-hidden="true"></i>
+
+                    </div>
+
+                    
+                    
+                </div>
+
+                <!-- ! MENU3 -->
+
+                <div id="menu1" class="br fdrow">
+
+                    <div id="m1icon33" class="br ai ">
+                        <i style="font-size: 20px;" class="fa fa-money " aria-hidden="true"></i>
+
+                    </div>
+
+                    
+                </div>
+
+                <!-- ! MENU4 -->
+
+                <div id="menu1" class="br fdrow" >
+
+                    <div id="m1icon44" class="br ai" style="color: #141414;">
+                        <i style="font-size: 20px;" class="fa fa-bar-chart" aria-hidden="true"></i>
+
+                    </div>
+
+                    
+
+                    
+
+                </div>
+
+                
+
+                <!-- ! MENU5 -->
+
+                <div id="menu5" class="br fdrow" >
+
+                    <div id="m1icon55" class="br ai" style="color: #6a6a6a;">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+
+                    </div>
+
+                    
+
+                    
+
+                </div>
+
+                <!-- ! MENU6 -->
+
+                <div id="menu1" class="br fdrow" >
+
+                    <div id="m1icon66" class="br ai" style="color: #6a6a6a;">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+
+                    </div>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <div id="menubartoggle" class="br">
+
+                <div id="mb-toggleinner" class="br fdrow ai" onclick="litdrk()">
+
+                    <div id="mb-toggleinner-dark" class="br ai jc" style="font-size: 15px;  background-color: #19a8f5;">
+                        <i id="sun" class="fa fa-sun-o" aria-hidden="true" ></i>
+
+                    </div>
+
+                    <div id="mb-toggleinner-light" class="br ai jc" style="font-size: 15px; ">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="menubar-footer" class="br ai">
+
+            <div id="menubar-footer-in" class="br fdrow">
+
+                <div id="bayu-icon" class="br">
+
+                    <div id="bayu-icon-red" class="br">
+                        <!-- <img src="./user.png" height="100%" width="100%" style="border-radius: 50%;"> -->
+                    </div>
+                </div>
+
+                <div id="bayu-name" class="br fdcol jc">
+
+                    <div id="bayu-ananda-name" class="br">
+                        <p>Bayu Ananda</p>
+                    </div>
+
+                    <div id="bayu-email" class="br">
+                        <p>anandabayu@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <div id="bayu-drop" class="br ai ">
+                    <i style="rotate: -90deg; margin-right: 12%;" class="fa fa-angle-left" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ! MAINBODY -->
+    <div id="mainbody" class="br fdrow hidescrollbar">
+
+        <div id="opnclsbtn2" class="br ai jc" onclick="hideshow()">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+        </div>
+
+        <div id="mainbody-center" class="br ">
+
+            <div id="mainbody-center-in" class="br fdcol">
+
+                <div id="mainbody-header" class="br fdrow">
+
+                    <div id="mainbody-header-left" class="br ai">
+
+                        <p>Good Morning, Bayu!</p>
+                    </div>
+
+                    <div id="mainbody-header-right" class="br ai jc">
+
+                        <div id="mainbody-header-searchbox" class="br ai">
+
+                            <div id="mainbody-hdr-searchicon" class="br">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+
+                            </div>
+
+                            <div id="searchinput" class="br">
+                                <input id="iamsearchbox" type="text" placeholder="Search..." onkeyup="dispmovies()" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+                <div id="mainbody-card" class="br fdcol">
+
+
+                    <div id="searchdata" class="br fdcol ai hidescrollbar">
+                    
+                        <!-- <div class="resultone br fdrow">
+
+                            <div class="r1icondiv br ai jc">
+
+                                <img src="" alt="" class="br">
+                            </div>
+
+                            <div class="r1textdiv br ai jc">
+
+                                <div class="r1text br">
+                                    <p>bsakvjbsdnfavndfkjvbkhfbvkh </p>
+                                </div>
+                            </div>
+
+                            <div class="r1yeardiv br ai jc">
+
+                                <div class="r1text br ai jc">
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="closebtn br" onclick="gayabres()">
+                            <i class="fa fa-times" aria-hidden="true" ></i>
+
+                        </div>
+                    </div>
+
+                    <div id="mainbody-card-top" class="br fdrow">
+
+                        <div id="card-header" class="br ai">
+                            <p>My Card</p>
+                        </div>
+
+                        <div id="card-lrbuttons" class="br fdrow ai jc">
+
+                            <div id="lrbtn-left" class="br ai jc" onclick="prevcard()">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                            </div>
+
+                            <div id="lrbtn-right" class="br ai jc" onclick="nextcard()">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mainbody-card-bottom" class="br fdrow">
+
+                        <div id="thecard" class="br ai jc">
+
+                            <div id="card-in" class="br fdcol">
+
+                                <div id="cardlogo-wl" class="br fdrow">
+
+                                    <div id="cardlogo-left" class="br">
+
+                                        <div id="cardlogo" class="br fdcol">
+
+                                            <div id="cardlogo-top" class="br fdrow">
+
+                                                <div id="cardlogo-top-left" class="br">
+
+                                                </div>
+
+                                                <div id="cardlogo-top-right" class="br">
+
+                                                </div>
+                                            </div>
+
+                                            <div id="cardlogo-bottom" class="br fdrow">
+
+                                                <div id="cardlogo-bottom-left" class="br">
+
+                                                </div>
+
+                                                <div id="cardlogo-bottom-right" class="br">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="cardlogo-right" class="br ai">
+
+                                        <div id="cl-right-intersect" class="br fdrow">
+
+                                            <div id="yellowcircle" class="br">
+
+                                            </div>
+                                            <div id="redcircle" class="br">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="holdername-wl" class="br">
+
+                                    <div id="holder" class="br">
+                                        <p>Holder Name</p>
+                                    </div>
+
+                                    <div id="bayuananda" class="br">
+                                        <p>Bayu Ananda</p>
+                                    </div>
+                                </div>
+
+                                <div id="cardnum-wl" class="br fdrow">
+
+                                    <div id="cardnum-left" class="br">
+
+                                        <div id="cardnum-left-head" class="br">
+                                            <p>Card Number</p>
+                                        </div>
+
+                                        <div id="cardnum-left-number" class="br">
+                                            <p>8502 &nbsp;3643 &nbsp;7635 &nbsp;7289</p>
+                                        </div>
+                                    </div>
+
+                                    <div id="cardnum-right" class="br">
+                                        <div id="cardnum-left-head" class="br">
+                                            <p>Exp</p>
+                                        </div>
+
+                                        <div id="cardnum-left-number" class="br" style="font-size: 15px;">
+                                            <p>08/24</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="totalbalance" class="br ai jc">
+
+                            <div id="totalbalance-in" class="br fdcol">
+
+                                <!-- <div id="totalbalance-in-top" class="br">
+
+                                    <div id="totalbalance-in-top-head" class="br">
+                                        <p id="tbwhite">Total Balance</p>
+                                    </div>
+
+                                    <div id="totalbalance-in-top-amount" class="br">
+                                        <p id="whitedollar">$56,138,00</p>
+                                    </div>
+                                </div>
+
+                                <div id="totalbalance-in-mid" class="br">
+                                    <div id="totalbalance-in-top-head" class="br">
+                                        <p id="currywhite">Currency</p>
+                                    </div>
+
+                                    <div id="totalbalance-in-top-amount" class="br">
+                                        <p id="usdollarwhite">US Dollar</p>
+                                    </div>
+                                </div> 
+
+                                <div id="totalbalance-in-bottom" class="br ai jc">
+                                    <p>Withdraw</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mainbody-financial" class="br fdcol">
+
+                    <div id="mainbody-financial-top" class="br fdrow">
+
+                        <div id="financial-top-left" class="br">
+
+                            <p>Financial Record</p>
+                        </div>
+
+                        <div id="financial-top-right" class="br fdrow ai">
+
+                            <div id="sevendays-icon" class="br ai jc">
+                                <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+
+                            </div>
+
+                            <div id="sevendays-text" class="br ai jc">
+                                <p>7 Days</p>
+                            </div>
+
+                            <div id="sevendays-dropicon" class="br ai jc">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mainbody-financial-bottom" class="br fdrow">
+
+                        <!-- <div id="financial-bottom-box1" class="br ai jc">
+
+                            <div id="financial-bottom-box1-in" class="br fdcol">
+
+                                <div id="fb-btm-totalincome" class="br">
+                                    <p id="tic-tic">Total Income</p>
+                                </div>
+
+                                <div id="fb-btm-amount" class="br">
+                                    <p id="ti-amt">$874,99</p>
+                                </div>
+
+                                <div id="fb-btm-perc" class="br fdrow">
+                                    <p>
+                                    <div style="rotate: 45deg; color: #2fcb35"><i class="fa fa-arrow-up"
+                                            aria-hidden="true"></i></div><span
+                                        style="color: #2fcb35; font-weight: 900;"> 7.8% </span><span id="fromlastweek">&nbsp; from last week</span></p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div id="financial-bottom-box2" class="br ai jc">
+
+                            <div id="financial-bottom-box1-in" class="br fdcol">
+
+                                <div id="fb-btm-totalincome" class="br">
+                                    <p id="tic-tic2">Total Expense</p>
+                                </div>
+
+                                <div id="fb-btm-amount" class="br">
+                                    <p id="ti-amt2">$321,99</p>
+                                </div>
+
+                                <div id="fb-btm-perc" class="br fdrow">
+                                    <p>
+                                    <div style="rotate: 135deg; color: #e65e75"><i class="fa fa-arrow-up"
+                                            aria-hidden="true"></i></div><span
+                                        style="color: #e65e75; font-weight: 900;"> 7.8% </span><span id="fromlastweek2">&nbsp; from last week</span></p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div id="financial-bottom-box3" class="br ai jc">
+                            <div id="financial-bottom-box1-in" class="br fdcol">
+
+                                <div id="fb-btm-totalincome" class="br">
+                                    <p id="tic-tic3">Total Saving</p>
+                                </div>
+
+                                <div id="fb-btm-amount" class="br">
+                                    <p id="ti-amt3" >$420,76</p>
+                                </div>
+
+                                <div id="fb-btm-perc" class="br fdrow">
+                                    <p>
+                                    <div style="rotate: 45deg; color: #2fcb35"><i class="fa fa-arrow-up"
+                                            aria-hidden="true"></i></div><span
+                                        style="color: #2fcb35; font-weight: 900;"> 7.8% </span><span id="fromlastweek3">&nbsp; from last week</span></p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div id="mainbody-moneyflow" class="br fdcol">
+
+                    <div id="mainbody-moneyflow-top" class="br fdrow">
+
+                        <div id="moneyflow-top-left" class="br">
+                            <p>Money Flow</p>
+                        </div>
+
+                        <div id="moneyflow-top-right" class="br fdrow">
+
+                            <div id="monthly-outer1" class="br ai fdrow " style="margin: 0 2%;">
+
+                                <!-- <div id="monthly-icon" class="br ai jc">
+                                    <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+
+                                </div> -->
+
+                                <div id="monthly-text" class="br" style="width: 60%; margin-left: 10%;" >
+                                    <p>All Activity</p>
+                                </div>
+
+                                <div id="monthly-drop" class="br ai jc" style="width: 30%; flex: 0.5;">
+                                    <i style="rotate: -90deg;" class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+
+                            <div id="monthly-outer2" class="br ai fdrow">
+
+                                <div id="monthly-icon" class="br ai jc">
+                                    <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+
+                                </div>
+
+                                <div id="monthly-text" class="br">
+                                    <p>Monthly</p>
+                                </div>
+
+                                <div id="monthly-drop" class="br ai jc">
+                                    <i style="rotate: -90deg;" class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="mainbody-moneyflow-bottom" class="br">
+
+                        <div id="card2graph" class="br">
+                            
+                            <canvas id="cookieChart2"  class="br"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainbody-sidebar" class="br ai">
+
+            <div id="mainbody-sidebar-in" class="br fdcol">
+
+                <div id="sidebar-earnings" class="br fdcol">
+
+                    <div id="sidebar-earnings-top1" class="br fdrow">
+
+                        <div id="sb-ern-top1-left" class="br">
+                            <p>Earnings</p>
+                        </div>
+
+                        <div id="sb-ern-top1-right" class="br">
+                            <p>View More</p>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-earnings-top2" class="br fdrow">
+
+                        <div id="sb-ern-top2-left" class="br ai" >
+
+                            <div id="monthly-outer3" class="br ai fdrow">
+
+                                <div id="monthly-icon" class="br ai jc">
+                                    <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+
+                                </div>
+
+                                <div id="monthly-text" class="br">
+                                    <p>Monthly</p>
+                                </div>
+
+                                <div id="monthly-drop" class="br ai jc">
+                                    <i style="rotate: -90deg;" class="fa fa-angle-left" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="sb-ern-top2-right" class="br ai fdrow">
+
+                            
+                            <div id="sb-ern-top2-right-i2" class="br ai jc">
+                                <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+
+                            </div>
+
+                            <div id="sb-ern-top2-right-i1" class="br ai jc">
+                                <i  class="fa fa-bar-chart" aria-hidden="true"></i>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-earnings-bottom" class="br">
+                        <div id="card1graph" class="br">
+                            
+                            <canvas id="cookieChart"  class="br"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sidebar-transaction" class="br fdcol">
+
+                    <div id="sidebar-transaction-top" class="br fdrow">
+
+                        <div id="sb-trans-top-left" class="br ai">
+
+                            <p>Transaction</p>
+                        </div>
+                        
+                        <div id="sb-trans-top-right" class="br ai">
+                            <p>View All</p>
+                            
+                        </div>
+                    </div>
+
+                    <div id="sidebar-transaction-bottom" class="br fdcol">
+
+                        <!-- <div id="sb-trans-btm-1" class="br fdrow">
+
+                            <div id="sb-trans-btm-1-icon" class="br ai ">
+
+                                <div id="trans-btm-1-icon-outer1" class="br ai jc">
+                                    <img src="./steam.png" height="75%" width="75%" style="border-radius: 50%;">
+                                </div>
+                            </div>
+
+                            <div id="sb-trans-btm-1-text" class="br fdcol jc">
+
+                                <div id="steamwallet" class="br">
+
+                                    <p>Steam Wallet</p>
+                                </div>
+
+                                <div id="steamwalletsubhead1" class="br ai">
+                                    <p>Apr 05, 2022 at 21:44</p>
+                                </div>
+                            </div>
+
+                            <div id="sb-trans-btm-1-perc" class="br ai">
+
+                                <p>-$29,49</p>
+                            </div>
+                        </div> -->
+
+                        <!-- <div id="sb-trans-btm-1" class="br fdrow">
+
+                            <div id="sb-trans-btm-1-icon" class="br ai ">
+
+                                <div id="trans-btm-1-icon-outer2" class="br ai jc">
+                                    <img src="./shopee-logo-31405.png" height="70%" width="60%" style="border-radius: ;">
+                                </div>
+                            </div>
+
+                            <div id="sb-trans-btm-1-text" class="br fdcol jc">
+
+                                <div id="steamwallet" class="br">
+
+                                    <p>Shoopepay</p>
+                                </div>
+
+                                <div id="steamwalletsubhead2" class="br ai">
+                                    <p>Feb 05, 2022 at 21:44</p>
+                                </div>
+                            </div>
+
+                            <div id="sb-trans-btm-1-perc" class="br ai">
+
+                                <p style="color: #2fcb35;">+$129,49</p>
+                            </div>
+                        </div>
+
+                        <div id="sb-trans-btm-1" class="br fdrow">
+
+                            <div id="sb-trans-btm-1-icon" class="br ai ">
+
+                                <div id="trans-btm-1-icon-outer3" class="br ai jc">
+                                    <img src="./netflix_PNG15.png" height="70%" width="40%" >
+                                </div>
+                            </div>
+
+                            <div id="sb-trans-btm-1-text" class="br fdcol jc">
+
+                                <div id="steamwallet" class="br">
+
+                                    <p>Netflix</p>
+                                </div>
+
+                                <div id="steamwalletsubhead3" class="br ai">
+                                    <p>Jan 25, 2022 at 21:44</p>
+                                </div>
+                            </div>
+
+                            <div id="sb-trans-btm-1-perc" class="br ai">
+
+                                <p style="color: ;">-$39,49</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div id="sidebar-quick" class="br fdcol">
+
+                    <div id="sidebar-quick-top" class="br fdrow">
+
+                        <div id="sb-quick-top-left" class="br ai">
+                            <p>Quick Transfer</p>
+                        </div>
+
+                        <div id="sb-quick-top-right" class="br ai">
+                            <div id="sb-quick-three-dots" class="br ai jc">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sidebar-quick-bottom" class="br">
+
+                        <div id="cardnum-title" class="br">
+
+                            <p>Card Number</p>
+                        </div>
+
+                        <div id="cardnum-num" class="br fdrow ai">
+                            <p>1234 5678 9012 3456</p>
+                            <div id="visa" class="br ai">
+
+                                <img src="./visa-logo-png-2015.png" width="100%" height="100%">
+                            </div>
+                        </div>
+
+                        <div id="amount-title" class="br">
+                            <p>Amount</p>
+                        </div>
+
+                        <div id="amount-amt" class="br fdrow">
+                            
+                            <div id="amtbox" class="br">
+
+                                <div id="amtbox-inner" class="br fdrow ai">
+                                    <p>$8379,00</p>
+                                    <p style="color: #6a6a6a;">USD</p>
+                                </div>
+                            </div>
+
+                            <div id="down" class="br ai jc">
+
+                                <div id="downloadicon" class="br ai jc">
+                                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+
+                            <div id="send" class="br ai jc">
+
+                                <div id="sendicon" class="br ai jc">
+                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./graph.js" defer></script>
+</body>
+
+</html>

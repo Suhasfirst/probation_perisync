@@ -1,0 +1,1616 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.br
+{
+    border: 1px solid black;
+}
+
+.ai
+{
+    display: flex;
+    align-items: center;
+}
+
+.jc
+{
+    display: flex;
+    justify-content: center;
+}
+
+.fdcol
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.fdrow
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.hidescrollbar::-webkit-scrollbar 
+{
+    display: none;
+}
+
+/* ! BODY */
+body
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #1e1f23; */
+    /* overflow-y: scroll; */
+}
+
+/* ! MENU BAR */
+
+#menubar
+{
+    flex: 1;
+    border-right: 2px solid #efefef;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+}
+
+    #opnclsbtn
+    {
+        position: absolute;
+        top: 5%;
+        right: -18px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid #efefef;
+        color: gray;
+    }
+
+    #opnclsbtn2
+    {
+        display: none;
+        position: absolute;
+        top: 5%;
+        right: -18px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid #efefef;
+        color: gray;
+    }
+
+    #menubar-logo
+    {
+        flex: 1;
+        border-bottom: 2px solid #efefef;
+
+    }
+
+        #menubar-logo-in
+        {
+            height: 40%;
+            width: 50%;
+            margin-left: 15%;
+        }
+
+            #mb-lg-in-logo
+            {
+                flex: 1;
+                height: 100%;
+                /* width: 50%; */
+            }
+
+                #mb-lg-in-logo
+                {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                    #mb-lg-top
+                    {
+                        flex: 1;
+                    }
+
+                        #mb-lg-top-left
+                        {
+                            flex: 1;
+                            background-color: #8cd3fa;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            margin:  3%;
+                        }
+
+                        #mb-lg-top-right
+                        {
+                            flex: 1;
+                            background-color: #19a8f5;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            margin: 3%;
+                        }
+
+                    #mb-lg-bottom
+                    {
+                        flex: 1;
+                    }
+
+                        #mb-lg-bottom-left
+                        {
+                            flex: 1;
+                            background-color: #19a8f5;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border-top-left-radius: 10px;
+                            margin:  3%;
+                        }
+
+                        #mb-lg-bottom-right
+                        {
+                            flex: 1;
+                            background-color: #8cd3fa;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border-top-right-radius: 10px;
+                            margin:  3%;
+                        }
+
+            #logotext
+            {
+                height: 100%;
+                /* width: 50%; */
+                flex: 3;
+            }
+
+                #logotext
+                {
+                    font-weight: 900;
+                    margin-left: 7%;
+                }
+        
+    #menubar-menus
+    {
+        flex: 5;
+        position: relative;
+    }
+        
+        #menubar-menus-in
+        {
+            height: 70%;
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 10%;
+        }
+
+        #menubar-menus-in2
+        {
+            display: none;
+            height: 70%;
+            width: 50%;
+            margin-left: 15%;
+            margin-top: 10%;
+            
+        }
+
+
+
+            #menu1
+            {
+                width: 100%;
+                height: 15%;
+            }
+
+                #m1icon11
+                {
+                    height: 100%;
+                    width: 20%;
+                    color: #6a6a6a;
+
+                }
+
+                #m1icon22
+                {
+                    height: 100%;
+                    width: 20%;
+                    color: #6a6a6a;
+
+                }
+
+                #m1icon33
+                {
+                    height: 100%;
+                    width: 20%;
+                    color: #6a6a6a;
+
+                }
+
+                #m1icon44
+                {
+                    height: 100%;
+                    width: 20%;
+                    color: #6a6a6a;
+
+                }
+
+                #m1icon55
+                {
+                    height: 100%;
+                    width: 20%;
+                    color: #6a6a6a;
+
+                }
+
+                #m1icon66
+                {
+                    height: 100%;
+                    width: 20%;
+                    color: #6a6a6a;
+
+                }
+
+                    #m1icon11 i
+                    {
+                        font-size: 22px;
+                        /* color: #19a8f5; */
+
+                    }
+
+                    #m1icon55 i
+                    {
+                        font-size: 22px;
+                        /* color: #19a8f5; */
+
+                    }
+
+                    #m1icon66 i
+                    {
+                        font-size: 22px;
+                        /* color: #19a8f5; */
+
+                    }
+
+                #m1text
+                {
+                    height: 100%;
+                    width: 50%;
+                    color: #6a6a6a;
+
+                }
+
+                    #m1text p
+                    {
+                        font-size: 15px;
+                        
+                    }
+
+                #m1icon2
+                {
+                    height: 100%;
+                    width: 30%;
+                    justify-content: flex-end;
+                }
+
+                    #up, #down
+                    {
+                        /* justify-content: center; */
+                        /* align-items: flex-end; */
+                    }
+
+                    #menu-redbox
+                    {
+                        height: 50%;
+                        width: 30%;
+                        border-radius: 5px;
+                        color: #ffffff;
+                        background-color: #e65e75;
+                        font-size: 11px;
+                    }
+
+                    #activity-submenu
+                    {
+                        height: 35%;
+                        margin-left: 10%;
+                    }
+
+                        #as-m1, #as-m2
+                        {
+                            height: 48%;
+                            color: #6a6a6a;
+                            font-size: 15px;
+                            border-radius: 7px;
+                            padding-left: 5%;
+
+                        }
+
+                        #blue-new
+                        {
+                            background-color: #19a8f5;
+                            font-size: 12px;
+                            padding:5% 10%;
+                            border-radius: 5px;
+                        }
+
+        #menubartoggle
+        {
+            position: absolute;
+            bottom: 5%;
+            left: 15%;
+
+            height: 7%;
+            width: 22%;
+        }
+
+            #mb-toggleinner
+            {
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                background-color: #efefef;
+
+                position: relative;
+                z-index: 1;
+            }
+
+                /* #oscillator */
+                {
+                    z-index: 10;
+                    position: absolute;
+                    height: 90%;
+                    width: 40%;
+                    border-radius: 50%;
+
+                    /* left: 1px; */
+                }
+
+                #mb-toggleinner-dark
+                {
+                    flex: 1;
+                    height: 90%;
+                    width: 40%;
+                    margin-left: 4%;
+                    border-radius: 50%;
+                    z-index: 5;
+
+                    /* left: 1px; */
+                }
+
+                    #sun
+                    {
+                        z-index: 11;
+                    }
+
+                #mb-toggleinner-light
+                {
+                    flex: 1;
+                    height: 90%;
+                    width: 40%;
+                    margin-right: 4%;
+                    border-radius: 50%;
+                }
+
+    #menubar-footer
+    {
+        flex: 1;
+        border-top: 2px solid #efefef;
+
+    }
+
+        #menubar-footer-in
+        {
+            height: 50%;
+            width: 75%;
+            margin-left: 10%;
+        }
+
+            #bayu-icon
+            {
+                flex: 0.8;
+            }
+
+                #bayu-icon-red
+                {
+                    background-color: #e65e75;
+                    border-radius: 50%;
+                    height: 100%;
+                }
+
+            #bayu-name
+            {
+                flex: 2.8;
+            }
+
+                #bayu-ananda-name
+                {
+                    font-size: 15px;
+                    color: #141414;
+                    font-weight: 800;
+                    margin-left: 8%;
+                }
+                
+                #bayu-email
+                {
+                    margin-left: 8%;
+                    font-size: 10px;
+                    color: #6a6a6a;
+
+
+                }
+
+            #bayu-drop
+            {
+                flex: 0.5;
+                justify-content: flex-end;
+            }
+
+/* ! MAIN BODY */
+
+#mainbody
+{
+    flex: 3.5;
+    overflow-y: scroll;
+}
+
+    #mainbody-center
+    {
+        min-height: 900px;
+        flex: 3;
+        /* height: 120%; */
+    }
+
+        #mainbody-center-in
+        {
+            height: 90%;
+            width: 90%;
+            margin-left: 7%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+            #mainbody-header
+            {
+                width: 100%;
+                height: 10%;
+            }
+
+                #mainbody-header-left
+                {
+                    height: 100%;
+                    width: 70%;
+                    font-weight: 900;
+                    font-size: 32px;
+                }
+
+                #mainbody-header-right
+                {
+                    height: 100%;
+                    width: 30%;
+                }
+
+                    #mainbody-header-searchbox
+                    {
+                        height: 90%;
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 2px solid #eeeeee;
+                    }
+
+                        #mainbody-hdr-searchicon
+                        {
+                            margin: 0 7%;
+                            color: #898989;
+                            font-size: 18px;
+                        }
+
+                        #searchinput input
+                        {
+                            width: 100%;
+                            border: none;
+                            background: transparent;
+                        }
+
+                        textarea:focus, input:focus{
+                            outline: none;
+                        }
+
+            
+
+
+
+            #mainbody-card
+            {
+                width: 100%;
+                height: 50%;
+                margin-top: 3%;
+                position: relative;
+            }
+
+
+                #searchdata
+                {
+                    display: none;
+                    height: 300px;
+                    width: 100%;
+                    /* background-color: #eeeeee; */
+                    background-color: white;
+                    position: absolute;
+                    top: 0px;
+                    border-radius: 25px;
+                    z-index: 20;
+                    overflow-y: scroll;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    
+                }
+
+                    .closebtn
+                    {
+                        position: sticky;
+                        right: 100px;
+                        top: 5px;
+                        z-index: 30;
+                    }
+
+                    .resultone
+                    {
+                        min-height: 60px;
+                        width: 90%;
+                        z-index: 22;
+                        /* margin-top: 2%; */
+                        border-bottom: 1px solid gray;
+                    }
+
+                        .r1icondiv
+                        {
+                            flex: 1;
+                        }
+
+                            .r1icondiv img
+                            {
+                                border-radius: 10px;
+                                width: 40px;
+                                height: 70%;
+                                /* aspect-ratio: 1/1; */
+                            }
+
+                        .r1textdiv
+                        {
+                            flex: 4;
+                        }
+
+                            .r1text
+                            {
+                                width: 90%;
+                                height: auto;
+                                font-size: 15px;
+                            }
+
+                        .r1yeardiv
+                        {
+                            flex: 1.5;
+                        }
+
+                #mainbody-card-top
+                {
+                    height: 20%;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+
+                    #card-header
+                    {
+                        height: 100%;
+                        width: 20%;
+                        font-size: 24px;
+                        font-weight: 900;
+                    }
+
+                    #card-lrbuttons
+                    {
+                        height: 100%;
+                        width: 10%;
+                        justify-content: space-around;
+                        color: #858585;
+                    }
+
+                        #lrbtn-left
+                        {
+                            font-size: 18px;
+                            border-radius: 50%;
+                            width: 40%;
+                            border: 2px solid #f5f5f5;
+                        }
+
+                        #lrbtn-right
+                        {
+                            font-size: 18px;
+                            border-radius: 50%;
+                            width: 40%;
+                            border: 2px solid #f5f5f5;
+                        }
+
+                #mainbody-card-bottom
+                {
+                    height: 80%;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+
+                    #thecard
+                    {
+                        height: 100%;
+                        width: 65%;
+                        border-radius: 15px;
+                        background-color: #2fcaf2;
+                    }
+
+                        #card-in
+                        {
+                            width: 85%;
+                            height: 80%;
+                        }
+
+                            #cardlogo-wl
+                            {
+                                width: 100%;
+                                height: 30%;
+                                /* min-height: 51px; */
+                            }
+
+                                #cardlogo-left
+                                {
+                                    flex: 1;
+                                }
+
+                                    #cardlogo
+                                    {
+                                        width: 20%;
+                                        height: 70%;
+                                    }
+
+                                        #cardlogo-top
+                                        {
+                                            flex: 1;
+                                            /* margin: 1%; */
+                                        }
+
+                                            #cardlogo-top-left
+                                            {
+                                                flex: 1;
+                                                background-color: #b8e4f6;
+                                                border-top-left-radius: 10px;
+                                                border-top-right-radius: 10px;
+                                                border-bottom-left-radius: 10px;
+                                                margin:  3%;
+                                            }
+
+                                            #cardlogo-top-right
+                                            {
+                                                flex: 1;
+                                                background-color: #ffffff;
+                                                border-top-left-radius: 10px;
+                                                border-top-right-radius: 10px;
+                                                border-bottom-right-radius: 10px;
+                                                margin: 3%;
+
+                                            }
+
+                                        #cardlogo-bottom
+                                        {
+                                            flex: 1;
+                                        }
+
+                                            #cardlogo-bottom-left
+                                            {
+                                                flex: 1;
+                                                background-color: #ffffff;
+                                                border-bottom-left-radius: 10px;
+                                                border-bottom-right-radius: 10px;
+                                                border-top-left-radius: 10px;
+                                                margin:  3%;
+                                            }
+
+                                            #cardlogo-bottom-right
+                                            {
+                                                flex: 1;
+                                                background-color: #b8e4f6;
+                                                border-bottom-left-radius: 10px;
+                                                border-bottom-right-radius: 10px;
+                                                border-top-right-radius: 10px;
+                                                margin:  3%;
+                                            }
+
+                                #cardlogo-right
+                                {
+                                    flex: 1;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    height: 50px;
+                                }
+
+                                    #cl-right-intersect
+                                    {
+                                        height: 85%;
+                                        width: 55%;
+                                        justify-content: flex-end;
+                                        position: relative;
+                                    }
+
+                                        #yellowcircle
+                                        {
+                                            opacity: 0.9;
+                                            width: 50%;
+                                            height: 100%;
+                                            background-color: #f79e1b;
+                                            border-radius: 50%;
+                                            z-index: 5;
+                                        }
+                                    
+                                            #redcircle
+                                            {
+                                                width: 50%;
+                                                height: 100%;
+                                                background-color: #eb001b;
+                                                border-radius: 50%;
+                                                position: absolute;
+                                                top: 0px;
+                                                right: 35%;
+                                                /* z-index: -1; */
+                                            }
+                                                
+                                            
+
+                            #holdername-wl
+                            {
+                                width: 100%;
+                                height: 30%;
+                                margin-top: 5%;
+                            }
+
+                                #holder
+                                {
+                                    color: #c0e7f7;
+                                    font-size: 10px;
+                                    margin: 2% 0;
+
+                                }
+
+                                #bayuananda
+                                {
+                                    color: #ffffff;
+                                    font-size: 18px;
+                                }
+
+                            #cardnum-wl
+                            {
+                                width: 100%;
+                                height: 30%;
+                                margin-top: 2%;
+                            }
+
+                                #cardnum-left
+                                {
+                                    flex: 4;
+                                }
+
+                                    #cardnum-left-head
+                                    {
+                                        color: #c0e7f7;
+                                        font-size: 10px;
+                                        margin: 2% 0;
+                                    }
+
+                                    #cardnum-left-number
+                                    {
+                                        color: #ffffff;
+                                        font-size: 18px;
+                                    }
+
+                                #cardnum-right
+                                {
+                                    flex: 1;
+                                    margin-top: 3%;
+                                }
+
+                    #totalbalance
+                    {
+                        height: 100%;
+                        width: 33%;
+                        border-radius: 15px;
+                        border: 2px solid #eeeeee;
+                    }
+
+                        #totalbalance-in
+                        {
+                            height: 80%;
+                            width: 80%;
+                        }
+
+                            #totalbalance-in-top
+                            {
+                                flex: 1;
+                                margin:0 5%;
+                            }
+
+                                #totalbalance-in-top-head
+                                {
+                                    font-weight: 900;
+                                    font-size: 12px;
+                                    color: #707070;
+                                }
+
+                                #totalbalance-in-top-amount
+                                {
+                                    font-weight: 900;
+                                    font-size: 23px;
+                                    color: #141414;
+                                }
+
+                            #totalbalance-in-mid
+                            {
+                                flex: 1;
+                                margin:2% 5%;
+
+                            }
+
+                            #totalbalance-in-bottom
+                            {
+                                flex: 0.7;
+                                border-radius: 10px;
+                                background-color: #19a8f5;
+                                color: #ffffff;
+                                font-weight: 900;
+                                font-size: 15px;
+                            }
+
+            #mainbody-financial
+            {
+                width: 100%;
+                height: 25%;
+                margin-top: 5%;
+            }
+
+                #mainbody-financial-top
+                {
+                    width: 100%;
+                    height: 30%;
+                    justify-content: space-between;
+                }
+
+                    #financial-top-left
+                    {
+                        height: 100%;
+                        width: 40%;
+                        font-size: 24px;
+                        font-weight: 900;
+                    }
+
+                    #financial-top-right
+                    {
+                        height: 100%;
+                        width: 20%;
+                        color: #616161;
+                        /* font-weight: 900; */
+                        border-radius: 6px;
+                        border: 2px solid #eeeeee;
+                    }
+
+                        #sevendays-icon
+                        {
+                            flex: 0.5;
+                            margin-left: 5%;
+                        }
+
+                        #sevendays-text
+                        {
+                            flex: 1;
+                            font-size: 12px;
+                            margin-left: 4%;
+                        }
+
+                        #sevendays-dropicon
+                        {
+                            flex: 0.5;
+                            rotate: -90deg;
+                        }
+
+                #mainbody-financial-bottom
+                {
+                    width: 100%;
+                    height: 80%;
+                    justify-content: space-between;
+                    margin-top: 2%;
+                }
+
+                    #financial-bottom-box1
+                    {
+                        width: 30%;
+                        height: 100%;
+                        /* margin: 0 5%; */
+                        border-radius: 10px;
+                        border: 2px solid #eeeeee;
+                    }
+
+                    #financial-bottom-box2
+                    {
+                        width: 30%;
+                        height: 100%;
+                        /* margin: 0 5%; */
+                        border-radius: 10px;
+                        border: 2px solid #eeeeee;
+                    }
+
+                    #financial-bottom-box3
+                    {
+                        width: 30%;
+                        height: 100%;
+                        /* margin: 0 5%; */
+                        border-radius: 10px;
+                        border: 2px solid #eeeeee;
+                    }
+
+                        #financial-bottom-box1-in
+                        {
+                            height: 70%;
+                            width: 75%;
+                        }
+
+                            #fb-btm-totalincome
+                            {
+                                flex: 1;
+                                font-weight: 900;
+                                font-size: 10px;
+                                color: #616161;
+                                
+                            }
+
+                            #fb-btm-amount
+                            {
+                                flex: 2;
+                                font-weight: 900;
+                                font-size: 20px;
+                                color: #141414;
+                            }
+
+                            #fb-btm-perc
+                            {
+                                flex: 1;
+                                font-weight: 900;
+                                font-size: 10px;
+                                color: #616161;
+                            }
+
+            #mainbody-moneyflow
+            {
+                width: 100%;
+                height: 50%;
+                margin-top: 5%;
+            }
+
+                #mainbody-moneyflow-top
+                {
+                    width: 100%;
+                    height: 15%;
+                    justify-content: space-between;
+                }
+
+                    #moneyflow-top-left
+                    {
+                        height: 100%;
+                        width: 30%;
+                        font-weight: 900;
+                        font-size: 23px;
+                    }
+
+                    #moneyflow-top-right
+                    {
+                        height: 100%;
+                        width: 40%;
+                    }
+
+                #mainbody-moneyflow-bottom
+                {
+                    width: 100%;
+                    height: 80%;
+                }
+
+                    #card2graph
+                    {
+                        height: 100%;
+                    }
+
+    #mainbody-sidebar
+    {
+        flex: 2;
+        min-height: 900px;
+
+    }
+    
+        #mainbody-sidebar-in
+        {
+            height: 90%;
+            width: 80%;
+            margin-left: 5%;  
+            margin-top: 2%;
+            margin-bottom: 7%;
+  
+        }
+
+            #sidebar-earnings
+            {
+                height: 45%;
+                width: 100%;
+            }
+
+                #sidebar-earnings-top1
+                {
+                    height: 10%;
+                    width: 100%;
+                }
+
+                    #sb-ern-top1-left
+                    {
+                        flex: 1;
+                        font-size: 20px;
+                        font-weight: 900;
+                    }
+
+                    #sb-ern-top1-right
+                    {
+                        flex: 1;
+                        font-size: 13px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+
+                #sidebar-earnings-top2
+                {
+                    height: 10%;
+                    width: 100%;
+                }
+
+                    #sb-ern-top2-left
+                    {
+                        flex: 1;
+                    }
+
+                        #monthly-outer1
+                        {
+                            width: 60%;
+                            height: 90%;
+                            border-radius: 8px;
+                            border: 2px solid #eeeeee;
+                            color: #5b5b5b;
+                        }
+
+                        #monthly-outer2
+                        {
+                            width: 60%;
+                            height: 90%;
+                            border-radius: 8px;
+                            border: 2px solid #eeeeee;
+                            color: #5b5b5b;
+                        }
+
+                        #monthly-outer3
+                        {
+                            width: 60%;
+                            height: 90%;
+                            border-radius: 8px;
+                            border: 2px solid #eeeeee;
+                            color: #5b5b5b;
+                        }
+
+                            #monthly-icon
+                            {
+                                flex: 1;
+                                font-size: 14px;
+                            }
+
+                            #monthly-text
+                            {
+                                flex: 1;
+                                font-size: 12px;
+                            }
+                            
+                            #monthly-drop
+                            {
+                                font-size: 10px;
+                                flex: 1;
+                            }
+
+                    #sb-ern-top2-right
+                    {
+                        flex: 1;
+                        justify-content: flex-end;
+                    }
+
+                        #sb-ern-top2-right-i1
+                        {
+                            height: 100%;
+                            width: 21%;
+                            border-radius: 7px;
+                            border: 2px solid #eeeeee;
+                            background-color: #f8fafb;
+                            margin-left: 3%;
+                            font-size: 15px;
+                            color: #242525;
+                        }
+
+                        #sb-ern-top2-right-i2
+                        {
+                            height: 100%;
+                            width: 21%;
+                            border-radius: 7px;
+                            border: 2px solid #eeeeee;
+                            /* background-color: #f8fafb; */
+                            color: #636363;
+                        }
+
+
+                #sidebar-earnings-bottom
+                {
+                    height: 75%;
+                    width: 100%;
+                }
+
+                    #card1graph
+                    {
+                        height: 100%;
+                    }
+
+                        #cookieChart
+                        {
+                            height: 400px;
+                        }
+                
+
+            #sidebar-transaction
+            {
+                height: 27%;
+                width: 100%;
+                margin-top: 10%;
+            }
+
+                #sidebar-transaction-top
+                {
+                    width: 100%;
+                    height: 15%;
+                }
+
+                    #sb-trans-top-left
+                    {
+                        flex: 1;
+                        font-weight: 900;
+                        font-size: 20px;
+                    }
+                    
+                    #sb-trans-top-right
+                    {
+                        font-size: 15px;
+                        color: #6a6a6a;
+                        /* font-weight: 900; */
+                        flex: 1;
+                        justify-content: flex-end;
+                    }
+
+                #sidebar-transaction-bottom
+                {
+                    /* width: 100%; */
+                    height: 85%;
+                    margin:3% 3% 0;
+                }
+
+                    #sb-trans-btm-1
+                    {
+                        height: 30%;
+                    }
+
+                        #sb-trans-btm-1-icon
+                        {
+                            flex: 1;
+                        }
+
+                            #trans-btm-1-icon-outer1
+                            {
+                                height: 90%;
+                                width: 75%;
+                                border-radius: 10px;
+                                /* border: 1px solid #6a6a6a; */
+                                border: 2px solid #f3f3f3;
+                            }
+
+                            /* #trans-btm-1-icon-outer2
+                            {
+                                height: 90%;
+                                width: 75%;
+                                border-radius: 10px;
+                                border: 2px solid #f3f3f3;
+                            } */
+
+                            #trans-btm-1-icon-outer3
+                            {
+                                height: 90%;
+                                width: 75%;
+                                border-radius: 10px;
+                                /* border: 1px solid #6a6a6a; */
+                                border: 2px solid #f3f3f3;
+                            }
+
+                        #sb-trans-btm-1-text
+                        {
+                            flex: 3;
+                        }
+
+                            #steamwallet
+                            {
+                                font-weight: 900;
+                                font-size: 15px ;
+                            }
+
+                            #steamwalletsubhead1
+                            {
+                                font-weight: 900;
+                                font-size: 11px ;
+                                color: #5b5b5b;
+                                margin: 1% 0;
+                            }
+
+                            #steamwalletsubhead2
+                            {
+                                font-weight: 900;
+                                font-size: 11px ;
+                                color: #5b5b5b;
+                                margin: 1% 0;
+                            }
+
+                            #steamwalletsubhead3
+                            {
+                                font-weight: 900;
+                                font-size: 11px ;
+                                color: #5b5b5b;
+                                margin: 1% 0;
+                            }
+
+                        #sb-trans-btm-1-perc
+                        {
+                            flex: 1;
+                            justify-content: flex-end;
+                            color: #e65e75;
+                            font-weight: 900;
+                            font-size: 15px;
+                        }
+
+            #sidebar-quick
+            {
+                height: 21%;
+                width: 100%;
+                margin-top: 5%;
+            }
+
+                #sidebar-quick-top
+                {
+                    height: 20%;
+                    width: 100%;
+                }
+
+                    #sb-quick-top-left
+                    {
+                        flex: 1;
+                        font-weight: 900;
+                        font-size: 20px;
+
+                    }
+
+                    #sb-quick-top-right
+                    {
+                        flex: 1;
+                        justify-content: flex-end;
+                    }
+
+                        #sb-quick-three-dots
+                        {
+                            width: 20%;
+                            height: 90%;
+                            border-radius: 50%  ;
+                            color: #5b5b5b;
+                            border: 2px solid #eeeeee;
+
+                        }
+
+                #sidebar-quick-bottom
+                {
+                    height: 80%;
+                    width: 100%;
+                    margin-top: 2%;
+                }
+
+                    #cardnum-title
+                    {
+                        font-size: 12px;
+                        font-weight: 900;
+                        color: #5b5b5b;
+                        margin: 2% 0;
+                        margin-left: 2%;
+                    }
+
+                    #cardnum-num
+                    {
+                        justify-content: space-between;
+                        height: 35%;
+                        border-radius: 8px;
+                        padding: 0 2%;
+                        font-weight: 900;
+                        /* border: 1px solid #616161; */
+                        border: 2px solid #eeeeee;
+                    }
+
+                        #visa
+                        {
+                            width: 15%;
+                            /* height: 100%; */
+                            
+                        }
+
+                    #amount-title
+                    {
+                        font-size: 12px;
+                        font-weight: 900;
+                        color: #5b5b5b;
+                        margin: 2% 0;
+                        margin-left: 2%;
+
+                    }
+
+                    #amount-amt
+                    {
+                        height: 35%;
+                    }
+
+                        #amtbox
+                        {
+                            flex: 4;
+                        }
+
+                            #amtbox-inner
+                            {
+                                height: 100%;
+                                border-radius: 8px;
+                                width: 95%;
+                                /* border: 1px solid #5b5b5b; */
+                                border: 2px solid #eeeeee;
+                                justify-content: space-between;
+                                padding: 0 3%;
+                                font-weight: 900;
+                            }
+
+                        #down
+                        {
+                            flex: 1;
+                        }
+
+                            #downloadicon
+                            {
+                                height: 100%;
+                                width: 80%;
+                                border-radius: 8px;
+                                background-color: #eeeeee;
+                                color: #141414;
+                                font-size: 20px;
+                            }
+
+                        #send
+                        {
+                            flex: 1;
+                        }
+
+                            #sendicon
+                            {
+                                height: 100%;
+                                width: 80%;
+                                border-radius: 8px;
+                                background-color: #19a8f5;
+                                color: white;
+                                font-size: 20px;
+                            }
+
+/* ! MEDIA QUERY */
+
+@media screen and (max-width: 840px) 
+{
+    #menubar
+    {
+        display: none;
+    }
+
+    #mainbody-center
+    {
+        min-height: 1000px;
+        /* flex: 3; */
+        /* height: 120%; */
+        width: 80%;
+        
+    }
+
+    #mainbody
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainbody-center-in
+        {
+            height: 90%;
+            width: 90%;
+            /* margin-left: 5%; */
+            /* margin-right: 7%; */
+            margin-top: 5%;
+            margin-bottom: 2%;
+        }
+
+        #mainbody-sidebar-in
+        {
+            height: 90%;
+            width: 50%;
+            
+            /* margin-left: 20%;   */
+            /* margin-top: 2%; */
+            margin-bottom: 7%;
+  
+        }
+
+        #mainbody-sidebar {
+            flex: 4;
+            min-height: 1000px;
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width: 500px) 
+{
+    #menubar
+    {
+        display: none;
+    }
+
+    #mainbody-center
+    {
+        min-height: 1000px;
+        /* flex: 3; */
+        /* height: 120%; */
+        width: 90%;
+        
+    }
+
+    #mainbody
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainbody-center-in {
+        height: 90%;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+        #mainbody-sidebar-in
+        {
+            height: 90%;
+            width: 90%;
+            
+            margin-right: 10%;  
+            margin-left: 10%;  
+            /* margin-top: 2%; */
+            margin-bottom: 7%;
+  
+        }
+
+        #mainbody-sidebar {
+            flex: 4;
+            min-height: 1000px;
+            justify-content: center;
+        }
+
+        #card-header {
+            height: 100%;
+            width: 40%;
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        #totalbalance {
+            display: none;
+        }
+
+        #thecard {
+            height: 90%;
+            width: 100%;
+            border-radius: 15px;
+            background-color: #2fcaf2;
+        }
+
+        #card-lrbuttons {
+            height: 100%;
+            width: 20%;
+            justify-content: space-around;
+            color: #858585;
+        }
+
+        #mainbody-header {
+            width: 100%;
+            height: 20%;
+            flex-direction: column;
+        }
+
+        #mainbody-header-left {
+            height: 100%;
+            width: 100%;
+            font-weight: 900;
+            font-size: 28px;
+        }
+
+        #mainbody-header-right {
+            height: 100%;
+            width: 100%;
+        }
+
+        #financial-top-left {
+            height: 100%;
+            width: 60%;
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        #financial-top-right {
+            height: 100%;
+            width: 30%;
+            color: #616161;
+            /* font-weight: 900; */
+            border-radius: 6px;
+            border: 2px solid #eeeeee;
+        }
+
+        #moneyflow-top-left {
+            height: 100%;
+            width: 40%;
+            font-weight: 900;
+            font-size: 23px;
+        }
+
+        #moneyflow-top-right {
+            height: 100%;
+            width: 60%;
+        }
+
+        #financial-bottom-box1 {
+            min-width: 160px;
+            /* min-width: 100px; */
+            height: 100%;
+            margin: 0 5%;
+            border-radius: 10px;
+            border: 2px solid #eeeeee;
+        }
+            #mainbody-financial-bottom {
+                width: 100%;
+                height: 80%;
+                justify-content: space-between;
+                margin-top: 2%;
+                overflow-x: scroll;
+            }
+}
